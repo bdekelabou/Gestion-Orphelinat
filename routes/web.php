@@ -12,6 +12,22 @@ Route::get('/apropos', function () {
     return view('visiteurs.apropos');
 });
 
+Route::get('/nosprojets',function() {
+    return view('visiteurs.nosprojets');
+});
+
+Route::get('/Equipe',function() {
+    return view('visiteurs.Equipe');
+});
+
+Route::get('/gallery',function() {
+    return view('visiteurs.gallery');
+});
+
+Route::get('/contact',function() {
+    return view('visiteurs.contact');
+});
+
 // Route::get('/', function () {
 //     return view('auth.register');
 // });

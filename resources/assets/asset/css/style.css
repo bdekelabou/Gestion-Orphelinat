@@ -83,19 +83,58 @@
     background: var(--bs-secondary) !important;
     color: var(--bs-white) !important;
 }
+/*** Button end ***/
 
 /*** Topbar Start ***/
 .sticky-top {
     transition: 0.5s;
-    background: var(--bs-white);
+    background: var(--bs-white); /* Assurez-vous que cette variable est correctement définie ou remplacez-la directement */
 }
 
 .topbar {
     padding: 10px 0;
-    background: var(--bs-secondary) !important;
+    background: #333333 !important; /* Fond de la topbar */
+}
+
+/* Couleur des liens principaux */
+.topbar a {
+    color: #F5F5F5; /* Couleur des liens en #F5F5F5 */
+    text-decoration: none; /* Enlever le soulignement des liens */
+}
+
+/* Couleur des icônes */
+.topbar i {
+    color: #07D0FD; /* Couleur des icônes en #07D0FD */
+}
+
+/* Couleur des liens au survol */
+.topbar a:hover {
+    color: #07D0FD; /* Couleur des liens au survol */
+}
+
+/* Styles pour les icônes sociales */
+.topbar .btn-square {
+    border: 1px solid #07D0FD; /* Bordure des boutons sociaux */
+}
+
+/* Couleur des icônes sociales au survol */
+.topbar .btn-square:hover {
+    border-color: #07D0FD; /* Bordure des boutons sociaux au survol */
+    background-color: transparent; /* Assurer que le fond reste transparent */
+}
+
+/* Couleur des icônes sociales en général */
+.topbar .btn-square i {
+    color: #07D0FD; /* Couleur des icônes sociales */
+}
+
+/* Couleur des icônes sociales au survol */
+.topbar .btn-square:hover i {
+    color: #884CD2; /* Couleur des icônes sociales au survol */
 }
 
 /*** Topbar End ***/
+
 
 /*** Navbar Start ***/
 .navbar .navbar-nav .nav-link {
@@ -161,8 +200,7 @@
 /*** Carousel Start ***/
 .carousel-item {
     position: relative;
-    min-height: 100vh
-    
+    min-height: 100vh;
 }
 
 .carousel-item img {
@@ -182,7 +220,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.5));
+    background: linear-gradient(rgba(136, 76, 210, 0.7), rgba(255, 255, 255, 0));
     background-size: cover;
 }
 
@@ -207,7 +245,7 @@
     border-left: 5px solid var(--bs-white);
     margin-right: 10px;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 #carouselId .carousel-indicators li.active {
@@ -216,8 +254,29 @@
     border-right: 15px solid var(--bs-primary);
     border-left: 15px solid var(--bs-primary);
 }
-/*** Carousel End ***/
 
+/* Custom button styles */
+.custom-btn-project {
+    background-color: #884CD2;
+    color: #000000;
+}
+
+.custom-btn-project:hover {
+    background-color: #07D0FD;
+    color: #000000;
+}
+
+.custom-btn-donate {
+    background-color: #ffffff;
+    color: #000000;
+    border: 0px solid #000000; /* Adding a border for better visibility */
+}
+
+.custom-btn-donate:hover {
+    background-color: #07D0FD;
+    color: #000000;
+}
+/*** Carousel End ***/
 
 .bg-breadcrumb {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/appointment-background.jpg);

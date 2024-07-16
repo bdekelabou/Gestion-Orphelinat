@@ -29,17 +29,18 @@
         <link href="{{Vite::asset('resources/assets/asset/css/style.css')}}" rel="stylesheet">
     </head>
  
-    <body class="font-sans antialiased dark:bg-black dark:text-white/50">
-    <!-- Navbar start -->
+<body class="font-sans antialiased dark:bg-black dark:text-white/50">
+<!-- Navbar start -->
+    <div class="container-fluid sticky-top px-0">
         <div class="container-fluid sticky-top px-0">
             <div class="container-fluid topbar d-none d-lg-block">
                 <div class="container px-0">
                     <div class="row align-items-center">
                         <div class="col-lg-8">
                             <div class="d-flex flex-wrap">
-                                <a href="#" class="me-4 text-light"><i class="fas fa-map-marker-alt text-primary me-2"></i>Localisation</a>
-                                <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>+22893849200</a>
-                                <a href="#" class="text-light"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                                <a href="#" class="me-4"><i class="fas fa-map-marker-alt me-2"></i>Localisation</a>
+                                <a href="#" class="me-4"><i class="fas fa-phone-alt me-2"></i>+22893849200</a>
+                                <a href="#"><i class="fas fa-envelope me-2"></i>Example@gmail.com</a>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -53,71 +54,73 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid bg-light">
-                <div class="container px-0">
-                    <nav class="navbar navbar-light navbar-expand-xl">
-                        <a href="/" class="navbar-brand">
-                            <h3 class="text-primary display-6">SuperNova</h3>
-                        </a>
-                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                            <span class="fa fa-bars text-primary"></span>
-                        </button>
-                        <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
-                            <div class="navbar-nav mx-auto border-top">
-                                <a href="/" class="nav-item nav-link active">Acceuil</a>
-                                <a href="/apropos" class="nav-item nav-link">A propos</a>
-                                <a href="service.html" class="nav-item nav-link">Nos Projets</a>
-                                <a href="gallery.html" class="nav-item nav-link">Galleries</a>
-                                <a href="team.html" class="nav-item nav-link">Equipe</a>
-                                <a href="contact.html" class="nav-item nav-link">Contact</a>
-                            </div>
-                                                @if (Route::has('login'))
-                                                <nav class="-mx-3 flex flex-1 justify-end">
-                                                    @auth
+        </div>
+        <div class="container-fluid bg-light">
+            <div class="container px-0">
+                <nav class="navbar navbar-light navbar-expand-xl">
+                    <a href="/" class="navbar-brand">
+                        <h3 class="text-primary display-6"><img src="{{Vite::asset('resources/assets/asset/img/logo.png')}}" class="img-fluid" alt="Image">
+                        </h3>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto border-top">
+                            <a href="/" class="nav-item nav-link active">Acceuil</a>
+                            <a href="/apropos" class="nav-item nav-link">A propos</a>
+                            <a href="/nosprojets" class="nav-item nav-link">Nos Projets</a>
+                            <a href="/gallery" class="nav-item nav-link">Galleries</a>
+                            <a href="/Equipe" class="nav-item nav-link">Equipe</a>
+                            <a href="/contact" class="nav-item nav-link">Contact</a>
+                        </div>
+                                            @if (Route::has('login'))
+                                            <nav class="-mx-3 flex flex-1 justify-end">
+                                                @auth
+                                                    <a
+                                                        href="{{ url('/dashboard') }}"
+                                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                                    >
+                                                        Dashboard
+                                                    </a>
+                                                @else
+                                                    <a
+                                                        href="{{ route('login') }}"
+                                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                                    >
+                                                        Log in
+                                                    </a>
+                                                    @if (Route::has('register'))
                                                         <a
-                                                            href="{{ url('/dashboard') }}"
+                                                            href="{{ route('register') }}"
                                                             class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                                                         >
-                                                            Dashboard
+                                                            Register
                                                         </a>
-                                                    @else
-                                                        <a
-                                                            href="{{ route('login') }}"
-                                                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                                        >
-                                                            Log in
-                                                        </a>
-                                                        @if (Route::has('register'))
-                                                            <a
-                                                                href="{{ route('register') }}"
-                                                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                                            >
-                                                                Register
-                                                            </a>
-                                                        @endif
-                                                    @endauth
-                                                </nav>
-                                            @endif  
-                                            <div class="d-flex align-items-center flex-nowrap pt-xl-0">
-                                                <button class="btn-search btn btn-primary btn-primary-outline-0 rounded-circle btn-lg-square" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                                                {{-- <a href="appointment.html" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4">Book Appointment</a> --}}
-                                            </div>                 
-                                    </div>
+                                                    @endif
+                                                @endauth
+                                            </nav>
+                                        @endif  
+                                        <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                                            <button class="btn-search btn btn-primary btn-primary-outline-0 rounded-circle btn-lg-square" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                                            {{-- <a href="appointment.html" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4">Book Appointment</a> --}}
+                                        </div>                 
                                 </div>
                             </div>
                         </div>
-                    </nav>
-                </div>
+                    </div>
+                </nav>
             </div>
         </div>
-    <!-- Navbar End -->
+    </div>
+<!-- Navbar End -->
 
     <!-- Modal Search Start -->
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content rounded-0">
                     <div class="modal-header">
-                        <h4 class="modal-title mb-0" id="exampleModalLabel">Recherche par mots-clés</h4>
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Don</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body d-flex align-items-center">

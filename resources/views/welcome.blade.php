@@ -1,68 +1,62 @@
 @extends('layouts.visiteur')
   @section('content')
                       
-      <!-- Carousel Start -->
-        <div class="container-fluid carousel-header px-0">
-            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="{{Vite::asset('resources/assets/asset/img/carousel-3.jpg')}}" class="img-fluid" alt="Image">
-                        <div class="carousel-caption">
-                            <div class="p-3" style="max-width: 900px;">
-                                <h4 class="text-primary text-uppercase mb-3">Spa & Beauty Center</h4>
-                                <h1 class="display-1 text-capitalize text-dark mb-3">Massage Treatment</h1>
-                                <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get Start</a>
-                                    <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{Vite::asset('resources/assets/asset/img/carousel-2.jpg')}}" class="img-fluid" alt="Image">
-                        <div class="carousel-caption">
-                            <div class="p-3" style="max-width: 900px;">
-                                <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;">Spa & Beauty Center</h4>
-                                <h1 class="display-1 text-capitalize text-dark mb-3">Facial Treatment</h1>
-                                <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get Start</a>
-                                    <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{Vite::asset('resources/assets/asset/img/carousel-1.jpg')}}" class="img-fluid" alt="Image">
-                        <div class="carousel-caption">
-                            <div class="p-3" style="max-width: 900px;">
-                                <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;">Spa & Beauty Center</h4>
-                                <h1 class="display-1 text-capitalize text-dark">Cellulite Treatment</h1>
-                                <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get Start</a>
-                                    <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
-                                </div>
+<!-- Carousel Start -->
+    <div class="container-fluid carousel-header px-0">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="{{Vite::asset('resources/assets/asset/img/carousel-3.jpg')}}" class="img-fluid" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-3 text-capitalize mb-3" style="color: #000000;">Bienvenue à l'Orphelinat SuperNova</h1>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">Nos Projets</a>
+                                <a class="btn custom-btn-donate rounded-pill py-3 px-5" href="#">Un Don</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item">
+                    <img src="{{Vite::asset('resources/assets/asset/img/carousel-2.jpg')}}" class="img-fluid" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">Participez à notre mission</h1>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">Nos Projets</a>
+                                <a class="btn custom-btn-donate rounded-pill py-3 px-5" href="#">Un Don</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{Vite::asset('resources/assets/asset/img/carousel-1.jpg')}}" class="img-fluid" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">Soyez un pilier pour les enfants</h1>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">Nos Projets</a>
+                                <a class="btn custom-btn-donate rounded-pill py-3 px-5" href="#">Un Don</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+    </div>
 <!-- Carousel End -->
 
   <!-- Services Start -->
