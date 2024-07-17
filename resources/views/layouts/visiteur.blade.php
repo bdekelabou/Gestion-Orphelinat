@@ -65,13 +65,13 @@
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
-                    <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                    <div class="collapse navbar-collapse bg-light py-3 ange" id="navbarCollapse">
                         <div class="navbar-nav mx-auto border-top">
-                            <a href="/" class="nav-item nav-link active">Acceuil</a>
+                            <a href="/" class="nav-item nav-link ">Acceuil</a>
                             <a href="/apropos" class="nav-item nav-link">A propos</a>
                             <a href="/nosprojets" class="nav-item nav-link">Nos Projets</a>
                             <a href="/gallery" class="nav-item nav-link">Galleries</a>
-                            <a href="/Equipe" class="nav-item nav-link">Equipe</a>
+                            <a href="/Equipe" class="nav-item nav-link">Evenement</a>
                             <a href="/contact" class="nav-item nav-link">Contact</a>
                         </div>
                                             @if (Route::has('login'))
@@ -137,53 +137,82 @@
 
         @yield('content')
 
-
-    <!-- Contact Start -->
-        <div class="container-fluid py-5">
-            <div class="container py-5">
-                <div class="row g-4 align-items-center">
-                    <div class="col-12">
-                        <div class="row g-4">
-                            <div class="col-lg-4">
-                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
-                                    <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
-                                    <div>
-                                        <h4>Adresse</h4>
-                                        <p class="mb-0">1010 Lomé, Togo</p>
-                                    </div>
+ <div class="container-fluid appointment py-5">
+        <!-- Counter End -->
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="appointment-form p-5">
+                        <p class="fs-4 text-uppercase text-">Commentaire</p>
+                        <h1 class="display-4 mb-4 text-white">Vos impressions</h1>
+                        <form>
+                            <div class="row gy-3 gx-4">
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control py-3 border-white bg-transparent text-white" placeholder="First Name">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="email" class="form-control py-3 border-white bg-transparent text-white" placeholder="Email">
+                                </div>
+                                <div class="col-lg-6">
+                                    <select class="form-select py-3 border-white bg-transparent" aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="date" class="form-control py-3 border-white bg-transparent">
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea class="form-control border-white bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="button" class="btn btn-primary btn-primary-outline-0 w-100 py-3 px-5">SUBMIT NOW</button>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
-                                    <i class="fas fa-envelope fa-2x text-primary me-4"></i>
-                                    <div>
-                                        <h4>Envoyez-nous un mail</h4>
-                                        <p class="mb-0">info@example.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
-                                    <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
-                                    <div>
-                                        <h4>Téléphone</h4>
-                                        <p class="mb-0">(+228) 93849200</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </form>
                     </div>
-                    <div class="col-12">
-                        <div class="rounded">
-                            <iframe class="rounded-top w-100" 
-                            style="height: 450px; margin-bottom: -6px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31708.18233239353!2d1.22368495!3d6.12232095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1027a4b79f8e3e4d%3A0x233a4f96b2a9cd0e!2sIPNET%20Institute%20of%20Technology!5e0!3m2!1sfr!2stg!4v1623779336345!5m2!1sfr!2stg" 
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-6">
+                    <div class="appointment-time p-5">
+                        <h1 class="display-5 mb-4">Opening Hours</h1>
+                        <div class="d-flex justify-content-between fs-5 text-white">
+                            <p>Saturday:</p>
+                            <p>09:00 am – 10:00 pm</p>
                         </div>
+                        <div class="d-flex justify-content-between fs-5 text-white">
+                            <p>Sunday:</p>
+                            <p>09:00 am – 10:00 pm</p>
+                        </div>
+                        <div class="d-flex justify-content-between fs-5 text-white">
+                            <p>Monday:</p>
+                            <p>09:00 am – 10:00 pm</p>
+                        </div>
+                        <div class="d-flex justify-content-between fs-5 text-white">
+                            <p>Tuesday:</p>
+                            <p>09:00 am – 10:00 pm</p>
+                        </div>
+                        <div class="d-flex justify-content-between fs-5 text-white">
+                            <p>Wednes:</p>
+                            <p>09:00 am – 08:00 pm</p>
+                        </div>
+                        <div class="d-flex justify-content-between fs-5 text-white mb-4">
+                            <p>Thursday:</p>
+                            <p>09:00 am – 05:00 pm</p>
+                        </div>
+                        <div class="d-flex justify-content-between fs-5 text-white mb-4">
+                            <p>Friday:</p>
+                            <p>CLOSED</p>
+                        </div>
+                        <p class="text-dark">Check out seasonal discounts for best offers.</p>
                     </div>
                 </div>
             </div>
         </div>
-    <!-- Contact End -->
+        
+    </div>
+
 
     <!-- Copyright Start -->
         <div class="container-fluid copyright py-4">

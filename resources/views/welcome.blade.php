@@ -59,7 +59,7 @@
     </div>
 <!-- Carousel End -->
 
-  <!-- Services Start -->
+<!-- Services Start -->
         <div class="container-fluid services py-5">
             <div class="container py-5">
                 <div class="mx-auto text-center mb-5" style="max-width: 800px;">
@@ -187,71 +187,71 @@
         
 <!-- Appointment Start -->
     <div class="container-fluid appointment py-5">
-    <!-- Counter Start -->
-        <div class="container-fluid counter-section">
-            <div class="container py-5">
-                <div class="row g-5 justify-content-center">
-                    <div class="col-md-6 col-lg-4 col-xl-4">
-                        <div class="counter-item p-5">
-                            <div class="counter-content bg-white p-4">
-                                <i class="fas fa-globe fa-5x text-primary mb-3"></i>
-                                <h5 class="text-primary">Worldwide Clients</h5>
-                                <div class="svg-img">
-                                    <svg width="100" height="50">
-                                        <polygon points="55, 10 85, 55 25, 55 25," style="fill: #DCCAF2;"/>
-                                    </svg>
+        <!-- Counter Start -->
+            <div class="container-fluid counter-section">
+                <div class="container py-5">
+                    <div class="row g-5 justify-content-center">
+                        <div class="col-md-6 col-lg-4 col-xl-4">
+                            <div class="counter-item p-5">
+                                <div class="counter-content bg-white p-4">
+                                    <i class="fas fa-globe fa-5x mb-3" class="text-secon"></i>
+                                    <h5 class="text-black">Nombre d'enfant</h5>
+                                    <div class="svg-img">
+                                        <svg width="100" height="50">
+                                            <polygon points="55, 10 85, 55 25, 55 25," style="fill: #cae7f2;"/>
+                                        </svg>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="counter-quantity">
-                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">379</span>
-                                <span class="h1 fw-bold text-white">+</span>
+                                <div class="counter-quantity">
+                                    <span class="text-white fs-2 fw-bold" data-toggle="counter-up">79</span>
+                                    <span class="h1 fw-bold text-white">+</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-4">
-                        <div class="counter-item p-5">
-                            <div class="counter-content bg-white p-4">
-                                <i class="fas fa-spa fa-5x text-primary mb-3"></i>
-                                <h5 class="text-primary">Wellness & Spa</h5>
-                                <div class="svg-img">
-                                    <svg width="100" height="50">
-                                        <polygon points="55, 10 85, 55 25, 55 25," style="fill: #DCCAF2;"/>
-                                    </svg>
+                        <div class="col-md-6 col-lg-4 col-xl-4">
+                            <div class="counter-item p-5">
+                                <div class="counter-content bg-white p-4">
+                                    <i class="fas fa-spa fa-5x mb-3"></i>
+                                    <h5 class="text-black">Admistraction</h5>
+                                    <div class="svg-img">
+                                        <svg width="100" height="50">
+                                            <polygon points="55, 10 85, 55 25, 55 25," style="fill: #cae7f2;"/>
+                                        </svg>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="counter-quantity">
-                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">829</span>
-                                <span class="h1 fw-bold text-white">+</span>
+                                <div class="counter-quantity">
+                                    <span class="text-white fs-2 fw-bold" data-toggle="counter-up">29</span>
+                                    <span class="h1 fw-bold text-white">+</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-4">
-                        <div class="counter-item p-5">
-                            <div class="counter-content bg-white p-4">
-                                <i class="fas fa-users fa-5x text-primary mb-3"></i>
-                                <h5 class="text-primary">Happy Customers</h5>
-                                <div class="svg-img">
-                                    <svg width="100" height="50">
-                                        <polygon points="55, 10 85, 55 25, 55 25," style="fill: #DCCAF2;"/>
-                                    </svg>
+                        <div class="col-md-6 col-lg-4 col-xl-4">
+                            <div class="counter-item p-5">
+                                <div class="counter-content bg-white p-4">
+                                    <i class="fas fa-users fa-5x mb-3"></i>
+                                    <h5 class="text-black">Nombre de donateur</h5>
+                                    <div class="svg-img">
+                                        <svg width="100" height="50">
+                                            <polygon points="55, 10 85, 55 25, 55 25," style="fill: #cae7f2;"/>
+                                        </svg>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="counter-quantity">
-                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">713</span>
-                                <span class="h1 fw-bold text-white">+</span>
+                                <div class="counter-quantity">
+                                    <span class="text-white fs-2 fw-bold" data-toggle="counter-up">113</span>
+                                    <span class="h1 fw-bold text-white">+</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    <!-- Counter End -->
+        <!-- Counter End -->
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
                     <div class="appointment-form p-5">
-                        <p class="fs-4 text-uppercase text-primary">Get In Touch</p>
-                        <h1 class="display-4 mb-4 text-white">Get Appointment</h1>
+                        <p class="fs-4 text-uppercase text-">Commentaire</p>
+                        <h1 class="display-4 mb-4 text-white">Vos impressions</h1>
                         <form>
                             <div class="row gy-3 gx-4">
                                 <div class="col-lg-6">
@@ -325,8 +325,8 @@
     <div class="container-fluid testimonial py-5">
         <div class="container py-5">
             <div class="text-center mx-auto mb-5" style="max-width: 800px;">
-                <p class="fs-4 text-uppercase text-primary">Testimonial</p>
-                <h1 class="display-4 mb-4 text-white">What Our Clients Say!</h1>
+                <p class="fs-4 text-uppercase text-jee">vos points de vue</p>
+                <h1 class="display-4 mb-4 text-black">Ceux que nos visiteur dise !</h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item rounded p-4">
@@ -337,7 +337,7 @@
                                     <img src="{{Vite::asset('resources/assets/asset/img/testimonial-1.jpg')}}" class="img-fluid rounded-circle" alt="">
                                 </div>
                                 <div class="text-center">
-                                    <h4 class="mb-2 text-primary">Person Name</h4>
+                                    <h4 class="mb-2 text-jee">Person Name</h4>
                                     <p class="m-0 text-white">Profession</p>
                                 </div>
                             </div>
@@ -348,13 +348,13 @@
                             </div>
                             <div class="testimonial-content">
                                 <div class="d-flex mb-4">
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <p class="fs-5 mb-0 text-white">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                <p class="fs-5 mb-0 text-black">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                                 </p>
                             </div>
                         </div>
@@ -368,7 +368,7 @@
                                     <img src="{{Vite::asset('resources/assets/asset/img/testimonial-2.jpg')}}" class="img-fluid rounded-circle" alt="">
                                 </div>
                                 <div class="text-center">
-                                    <h4 class="mb-2 text-primary">Person Name</h4>
+                                    <h4 class="mb-2 text-jee">Person Name</h4>
                                     <p class="m-0 text-white">Profession</p>
                                 </div>
                             </div>
@@ -379,13 +379,13 @@
                             </div>
                             <div class="testimonial-content">
                                 <div class="d-flex mb-4">
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <p class="fs-5 mb-0 text-white">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                <p class="fs-5 mb-0 text-black">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                                 </p>
                             </div>
                         </div>
@@ -399,7 +399,7 @@
                                     <img src="{{Vite::asset('resources/assets/asset/img/testimonial-3.jpg')}}" class="img-fluid rounded-circle" alt="">
                                 </div>
                                 <div class="text-center">
-                                    <h4 class="mb-2 text-primary">Person Name</h4>
+                                    <h4 class="mb-2 text-jee">Person Name</h4>
                                     <p class="m-0 text-white">Profession</p>
                                 </div>
                             </div>
@@ -410,13 +410,13 @@
                             </div>
                             <div class="testimonial-content">
                                 <div class="d-flex mb-4">
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                    <i class="fas fa-star text-secondary"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <p class="fs-5 mb-0 text-white">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                <p class="fs-5 mb-0 text-black">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                                 </p>
                             </div>
                         </div>

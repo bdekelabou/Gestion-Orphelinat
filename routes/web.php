@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EnfantController;
+use App\Http\Controllers\ProjetController;
+use App\Http\Controllers\ProfileController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -49,6 +50,8 @@ Route::get('logout', function(){
 });
 
  Route::resource('enfants', EnfantController::class);
+ Route::resource('projets', ProjetController::class);
+ Route::resource('evenement', ProjetController::class);
 // Route::middleware('auth')->group(function () {
 //     Route::get('/enfants', [EnfantController::class, 'index'])->name('enfants.index');
 //     Route::get('/enfants/create', [EnfantController::class, 'create'])->name('enfants.create');

@@ -102,7 +102,6 @@
               </ul>
             </div>
           </li>
-
           <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <span class="menu-icon">
@@ -118,17 +117,42 @@
               </ul>
             </div>
           </li>
+
           <li class="nav-item menu-items">
-            <a class="nav-link" href="#">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <span class="menu-icon">
-                <i class="mdi mdi-file-document-box"></i>
+                <i class="mdi mdi-security"></i>
               </span>
+              <span class="menu-title">Evenement</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{route('evenement.create')}}"> Voir les Evenement</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"> Voir La liste des Evenement</a></li>
+              </ul>
+            </div>
+
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="mdi mdi-laptop"></i>
+              </span>
+              <span class="menu-title">Pojets</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{route('projets.create')}}">Ajouter un projet</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('projets.index')}}">Voir La Liste des pojets</a></li>
+              </ul>
+            </div>
               <span class="menu-title">Documentation</span>
             </a>
           </li>
         </ul>
       </nav>
-      <!-- partial -->
+    <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_navbar.html -->
         <nav class="navbar p-0 fixed-top d-flex flex-row">
@@ -296,7 +320,7 @@
         </div>
         <!-- main-panel ends -->
       </div>
-      <!-- page-body-wrapper ends -->
+    <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
 
