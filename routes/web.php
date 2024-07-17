@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EnfantController;
 use App\Http\Controllers\EvenementController;
+use App\Http\Controllers\DonController;
 use App\Http\Controllers\ProjetController;
 use App\Http\Controllers\ProfileController;
 
@@ -48,7 +49,15 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+   
+    Route::get('/delete-don/{id}',[DonController::class, 'delete_don'])->name('don.delete');
+    Route::get('/update-don/{id}',[DonController::class, 'update_don'])->name('don.update');
+    Route::post('/update/traitement',[DonController::class, 'update_don_traitement'])->name('update_don.traitement');
+    Route::get('/don',[DonController::class, 'liste_don'])->name('don.liste');
+    Route::get('/ajouter',[DonController::class, 'ajouter_don'])->name('don.ajout');
+    Route::post('/ajouter/traitement',[DonController::class, 'ajouter_don_traitement'])->name('ajouter_don.taitement');
 });
+
 
 
 

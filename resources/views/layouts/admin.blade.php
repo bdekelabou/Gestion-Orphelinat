@@ -112,8 +112,8 @@
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="#"> Voir les Dons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#"> Voir La liste des donnateurs</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{Route('don.ajout')}}"> Voir les Dons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{Route('don.liste')}}"> Voir La liste des donnateurs</a></li>
               </ul>
             </div>
           </li>
