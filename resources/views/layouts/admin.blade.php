@@ -128,8 +128,8 @@
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{route('evenement.create')}}"> Voir les Evenement</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#"> Voir La liste des Evenement</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('evenements.create')}}"> Ajouter un evenement </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('evenements.liste')}}"> Voir La liste des Evenements</a></li>
               </ul>
             </div>
 

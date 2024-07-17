@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EnfantController;
+use App\Http\Controllers\EvenementController;
 use App\Http\Controllers\ProjetController;
 use App\Http\Controllers\ProfileController;
 
@@ -38,10 +39,18 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
+    Route::get('/evenements', [EvenementController::class, 'ajouter_evenement'])->name('evenements.create');
+    Route::get('/evenements/liste', [EvenementController::class, 'index'])->name('evenements.liste');
+    Route::get('/update-evenement/{id}',[EvenementController::class, 'update_evenement'])->name('evenements.update');
+    Route::get('/evenements/delete/{id}', [EvenementController::class, 'delete_evenement'])->name('evenements.delete');
+    Route::post('/update-evenement/traitement',[EvenementController::class, 'update_evenement_traitement2'])->name('evenements.update_traitement');
+    Route::post('/ajouter/traitement',[EvenementController::class, 'ajouter_evenement_traitement'])->name('evenements.evenement_traitement');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
 
 Route::get('logout', function(){
     auth()-> logout();
