@@ -75,6 +75,8 @@ Route::get('logout', function(){
 //  Route::resource('medical', MedicalController::class);
  // Dans routes/web.php
 Route::get('/medical/create', [MedicalController::class, 'create'])->name('medical.creation');
+Route::post('/projets/store', [ProjetController::class, 'store'])->name('projets.store');
+
 
 // Route::middleware('auth')->group(function () {
 //     Route::get('/enfants', [EnfantController::class, 'index'])->name('enfants.index');
