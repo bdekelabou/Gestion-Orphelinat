@@ -1,6 +1,10 @@
+@extends('layouts.visiteur')
+@section('content')
+
+
 <x-guest-layout>
-   <strong> <h1 class="text-center mb-4">Veillez vous inscrire</h1></strong>
-    <form method="POST" action="{{ route('register') }}">
+   <strong> <h1 class="text-center mb-4 ">Veillez vous inscrire</h1></strong>
+    <form method="POST" action="{{ route('register') }}" >
         @csrf
 
         <!-- Nom -->
@@ -68,3 +72,6 @@
         </div>
     </form>
 </x-guest-layout>
+
+
+@endsection

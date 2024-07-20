@@ -1,8 +1,10 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-        <div class="w-50">
+
+<div class="container">
+    <div class="row justify-content-center"> <!-- Utilisation de justify-content-center pour centrer horizontalement -->
+        <div class="col-md-6 col-lg-4">
             <h1 class="text-center mb-4">Ajouter un Enfant</h1>
             <form method="POST" action="{{ route('enfants.store') }}">
                 @csrf
@@ -10,7 +12,7 @@
                 <!-- Nom -->
                 <div class="form-group">
                     <label for="nom">{{ __('Nom') }}</label>
-                    <input id="nom" class="form-control w-100" type="text" name="nom" value="{{ old('nom') }}" required autofocus />
+                    <input id="nom" class="form-control" type="text" name="nom" value="{{ old('nom') }}" required autofocus />
                     @error('nom')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror
@@ -19,7 +21,7 @@
                 <!-- Prénom -->
                 <div class="form-group">
                     <label for="prenom">{{ __('Prénom') }}</label>
-                    <input id="prenom" class="form-control w-100" type="text" name="prenom" value="{{ old('prenom') }}" required />
+                    <input id="prenom" class="form-control" type="text" name="prenom" value="{{ old('prenom') }}" required />
                     @error('prenom')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror
@@ -27,28 +29,22 @@
 
                 <!-- Genre -->
                 <div class="form-group">
-                    <label>{{ __('Genre') }}</label>
-                    <div class="d-flex align-items-center">
-                        <div class="form-check mr-3">
+                    <label>{{ __('Sexe') }}</label>
+                    <div class="d-flex">
+                        <div class="form-check">
                             <input class="form-check-input" type="radio" name="genre" id="genre_homme" value="homme" {{ old('genre') == 'homme' ? 'checked' : '' }}>
                             <label class="form-check-label" for="genre_homme">
-                                {{ __('Homme') }}
+                                {{ __('Garcon') }}
                             </label>
                         </div>
-                        <div class="form-check mr-3">
+                        <div class="form-check">
                             <input class="form-check-input" type="radio" name="genre" id="genre_femme" value="femme" {{ old('genre') == 'femme' ? 'checked' : '' }}>
                             <label class="form-check-label" for="genre_femme">
-                                {{ __('Femme') }}
-                            </label>
-                        </div>
-                        <div class="form-check mr-3">
-                            <input class="form-check-input" type="radio" name="genre" id="genre_autre" value="autre" {{ old('genre') == 'autre' ? 'checked' : '' }}>
-                            <label class="form-check-label" for="genre_autre">
-                                {{ __('Autre') }}
+                                {{ __('Fille') }}
                             </label>
                         </div>
                     </div>
-                    @error('genre')
+                    @error('Sexe')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror
                 </div>
@@ -56,7 +52,7 @@
                 <!-- Date de Naissance -->
                 <div class="form-group">
                     <label for="date_naissance">{{ __('Date de Naissance') }}</label>
-                    <input id="date_naissance" class="form-control w-100" type="date" name="date_naissance" value="{{ old('date_naissance') }}" required />
+                    <input id="date_naissance" class="form-control" type="date" name="date_naissance" value="{{ old('date_naissance') }}" required />
                     @error('date_naissance')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror
@@ -65,7 +61,7 @@
                 <!-- Situation Médicale -->
                 <div class="form-group">
                     <label for="situationMedicale">{{ __('Situation Médicale') }}</label>
-                    <select id="situationMedicale" class="form-control w-100" name="situationMedicale">
+                    <select id="situationMedicale" class="form-control" name="situationMedicale">
                         <option value="" disabled selected>-- Sélectionner --</option>
                         <option value="En bonne santé" {{ old('situationMedicale') == 'En bonne santé' ? 'selected' : '' }}>En bonne santé</option>
                         <option value="Souffrant" {{ old('situationMedicale') == 'Souffrant' ? 'selected' : '' }}>Souffrant</option>
@@ -79,7 +75,7 @@
                 <!-- Situation Scolaire -->
                 <div class="form-group">
                     <label for="situationScolaire">{{ __('Situation Scolaire') }}</label>
-                    <select id="situationScolaire" class="form-control w-100" name="situationScolaire">
+                    <select id="situationScolaire" class="form-control" name="situationScolaire">
                         <option value="" disabled selected>-- Sélectionner --</option>
                         <option value="Scolarisé" {{ old('situationScolaire') == 'Scolarisé' ? 'selected' : '' }}>Scolarisé</option>
                         <option value="Non scolarisé" {{ old('situationScolaire') == 'Non scolarisé' ? 'selected' : '' }}>Non scolarisé</option>
@@ -101,4 +97,6 @@
             </form>
         </div>
     </div>
+</div>
+
 @endsection

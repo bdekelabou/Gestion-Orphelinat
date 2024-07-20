@@ -1,11 +1,11 @@
-<section
+<section>
     <header>
-        <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
+        <h2 class="text-lg font-medium text-black-900 dark:text-black-100">
             {{ __('Informations Profile') }}
         </h2>
 
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-            {{ __("Mettre a jour les informations du profile.") }}
+        <p class="mt-1 text-sm text-black-600 dark:text-black-400">
+            {{ __("Mettre à jour les informations du profil.") }}
         </p>
     </header>
 
@@ -48,7 +48,9 @@
         </div>
 
         <div class="flex items-center gap-4">
-            <x-dark-button>{{ __('Enregistrer') }}</x-primary-button>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                {{ __('Enregistrer') }}
+            </button>
 
             @if (session('status') === 'profile-updated')
                 <p

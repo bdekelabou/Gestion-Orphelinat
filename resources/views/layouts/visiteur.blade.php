@@ -65,7 +65,7 @@
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
-                    <div class="collapse navbar-collapse bg-light py-3 ange" id="navbarCollapse">
+                    <div class="collapse navbar-collapse bg-light py-3 " id="navbarCollapse">
                         <div class="navbar-nav mx-auto border-top">
                             <a href="/" class="nav-item nav-link ">Acceuil</a>
                             <a href="/apropos" class="nav-item nav-link">A propos</a>
@@ -135,10 +135,10 @@
     <!-- Modal Search End -->
 
 
-        @yield('content')
+@yield('content')
 
- <div class="container-fluid appointment py-5">
-        <!-- Counter End -->
+<div class="container-fluid appointment py-5">
+    <!-- Counter start -->
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
@@ -148,17 +148,11 @@
                         <form>
                             <div class="row gy-3 gx-4">
                                 <div class="col-lg-6">
-                                    <input type="text" class="form-control py-3 border-white bg-transparent text-white" placeholder="First Name">
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="email" class="form-control py-3 border-white bg-transparent text-white" placeholder="Email">
-                                </div>
-                                <div class="col-lg-6">
                                     <select class="form-select py-3 border-white bg-transparent" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                        <option selected>Que commentez vous</option>
+                                        <option value="1">l'Orphelinat</option>
+                                        <option value="2">le site</option>
+                                        <option value="3">suggestion</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-6">
@@ -176,42 +170,42 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="appointment-time p-5">
-                        <h1 class="display-5 mb-4">Opening Hours</h1>
+                        <h1 class="display-5 mb-4">Jours de visites</h1>
                         <div class="d-flex justify-content-between fs-5 text-white">
-                            <p>Saturday:</p>
+                            <p>Lundi:</p>
                             <p>09:00 am – 10:00 pm</p>
                         </div>
                         <div class="d-flex justify-content-between fs-5 text-white">
-                            <p>Sunday:</p>
+                            <p>Mardi:</p>
                             <p>09:00 am – 10:00 pm</p>
                         </div>
                         <div class="d-flex justify-content-between fs-5 text-white">
-                            <p>Monday:</p>
-                            <p>09:00 am – 10:00 pm</p>
-                        </div>
-                        <div class="d-flex justify-content-between fs-5 text-white">
-                            <p>Tuesday:</p>
-                            <p>09:00 am – 10:00 pm</p>
-                        </div>
-                        <div class="d-flex justify-content-between fs-5 text-white">
-                            <p>Wednes:</p>
+                            <p>Mercredi:</p>
                             <p>09:00 am – 08:00 pm</p>
                         </div>
-                        <div class="d-flex justify-content-between fs-5 text-white mb-4">
-                            <p>Thursday:</p>
+                        <div class="d-flex justify-content-between fs-5 text-white">
+                            <p>Jeudi:</p>
                             <p>09:00 am – 05:00 pm</p>
                         </div>
+                        <div class="d-flex justify-content-between fs-5 text-white">
+                            <p>Vendredi:</p>
+                            <p>09:00 am – 10:00 pm</p>
+                        </div>
+                        <div class="d-flex justify-content-between fs-5 text-white">
+                            <p>Samedi:</p>
+                            <p>09:00 am – 10:00 pm</p>
+                        </div>
                         <div class="d-flex justify-content-between fs-5 text-white mb-4">
-                            <p>Friday:</p>
+                            <p>Dimanche:</p>
                             <p>CLOSED</p>
                         </div>
-                        <p class="text-dark">Check out seasonal discounts for best offers.</p>
+                        <p class="text-dark">Faites un tour pour voire et patagez la joie de nos enfants.</p>
                     </div>
                 </div>
             </div>
         </div>
-        
-    </div>
+       <!-- Counter End -->
+</div>
 
 
     <!-- Copyright Start -->

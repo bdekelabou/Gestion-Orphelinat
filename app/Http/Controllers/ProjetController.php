@@ -18,7 +18,7 @@ class ProjetController extends Controller
 // Affiche le formulaire de création d'un enfant.
     public function create()
     {
-        return view('Projets.create');
+        return view('projets.create');
     }
    
 // Enregistre un nouvel projet.
@@ -28,7 +28,6 @@ class ProjetController extends Controller
             'nom'=> 'required|string',
             'description' => 'required|string',
             'date_debut' => 'required|date',
-            'date_fin' => 'required|date',
             'budget' => 'required|numeric',
             'statut' => 'required|boolean',
         ]);
@@ -37,7 +36,6 @@ class ProjetController extends Controller
             'nom' =>$request->nom,
             'description' =>$request->description,
             'date_debut' =>$request->date_debut,
-            'date_fin' =>$request->date_fin,
             'budget' =>$request->budget,
             'statut' =>$request->statut,
         ]);
@@ -63,7 +61,6 @@ class ProjetController extends Controller
             'nom'=> 'required|string',
             'description' => 'required|string',
             'date_debut' => 'required|date',
-            'date_fin' => 'required|date',
             'budget' => 'required|numeric',
             'statut' => 'required|boolean',
         ]);
@@ -72,7 +69,6 @@ class ProjetController extends Controller
             'nom' =>$request->nom,
             'description' =>$request->description,
             'date_debut' =>$request->date_debut,
-            'date_fin' =>$request->date_fin,
             'budget' =>$request->budget,
             'statut' =>$request->statut,
         ]);

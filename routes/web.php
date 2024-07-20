@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EnfantController;
 use App\Http\Controllers\ProjetController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\MedicalController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -51,7 +53,11 @@ Route::get('logout', function(){
 
  Route::resource('enfants', EnfantController::class);
  Route::resource('projets', ProjetController::class);
- Route::resource('evenement', ProjetController::class);
+//  Route::resource('evenement', EvenementController::class);
+//  Route::resource('medical', MedicalController::class);
+ // Dans routes/web.php
+Route::get('/medical/create', [MedicalController::class, 'create'])->name('medical.creation');
+
 // Route::middleware('auth')->group(function () {
 //     Route::get('/enfants', [EnfantController::class, 'index'])->name('enfants.index');
 //     Route::get('/enfants/create', [EnfantController::class, 'create'])->name('enfants.create');
