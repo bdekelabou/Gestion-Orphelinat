@@ -70,14 +70,20 @@ Route::get('logout', function(){
 });
 
  Route::resource('enfants', EnfantController::class);
- Route::resource('projets', ProjetController::class);
+//  Route::resource('projets', ProjetController::class);
 //  Route::resource('evenement', EvenementController::class);
 //  Route::resource('medical', MedicalController::class);
  // Dans routes/web.php
 Route::get('/medical/create', [MedicalController::class, 'create'])->name('medical.creation');
-Route::post('/projets/store', [ProjetController::class, 'store'])->name('projets.store');
-
-
+Route::resource('projets', ProjetController::class)->names([
+    'index' => 'projets.index',
+    'create' => 'projets.create',
+    'store' => 'projets.store',
+    'show' => 'projets.show',
+    'edit' => 'projets.editer', // Ici vous définissez le nom personnalisé
+    'update' => 'projets.update',
+    'destroy' => 'projets.destroy',
+]);
 // Route::middleware('auth')->group(function () {
 //     Route::get('/enfants', [EnfantController::class, 'index'])->name('enfants.index');
 //     Route::get('/enfants/create', [EnfantController::class, 'create'])->name('enfants.create');

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-     meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>SuperNova Fundation</title>
     <meta
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"name="viewport"/>
@@ -44,9 +44,9 @@
       <div class="sidebar-logo">
         <!-- Logo Header -->
         <div class="logo-header" data-background-color="dark">
-          <a href="index.html" class="logo">
+          <a href="{{route('dashboard')}}" class="logo">
             <img
-              src="{{Vite::asset('resources/assets/img/kaiadmin/logo_light.svg')}}"
+              src="{{Vite::asset('resources/assets/img/kaiadmin/logo_light.png')}}"
               alt="navbar brand"
               class="navbar-brand"
               height="20"
