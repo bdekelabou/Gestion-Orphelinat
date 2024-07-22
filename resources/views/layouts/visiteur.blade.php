@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <title>Sparlex - Spa Website Template</title>
+        <title>SuperNova Fundation</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -66,8 +66,8 @@
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse bg-light py-3 " id="navbarCollapse">
-                        <div class="navbar-nav mx-auto border-top">
-                            <a href="/" class="nav-item nav-link ">Acceuil</a>
+                        <div class="navbar-nav mx-auto border-top text-black" id="maxi">
+                            <a href="/" class="nav-item nav-link  ">Acceuil</a>
                             <a href="/apropos" class="nav-item nav-link">A propos</a>
                             <a href="/nosprojets" class="nav-item nav-link">Nos Projets</a>
                             <a href="/gallery" class="nav-item nav-link">Galleries</a>
@@ -75,25 +75,25 @@
                             <a href="/contact" class="nav-item nav-link">Contact</a>
                         </div>
                                             @if (Route::has('login'))
-                                            <nav class="-mx-3 flex flex-1 justify-end">
+                                            <nav class="nav-item nav-link">
                                                 @auth
                                                     <a
                                                         href="{{ url('/dashboard') }}"
-                                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                                        class="rounded-md px-3 py-2 angel"
                                                     >
                                                         Dashboard
                                                     </a>
                                                 @else
                                                     <a
                                                         href="{{ route('login') }}"
-                                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                                        class="rounded-md px-3 py-2 angel"
                                                     >
                                                         Log in
                                                     </a>
                                                     @if (Route::has('register'))
                                                         <a
                                                             href="{{ route('register') }}"
-                                                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                                            class="rounded-md px-3 py-2 angel"
                                                         >
                                                             Register
                                                         </a>
@@ -101,8 +101,8 @@
                                                 @endauth
                                             </nav>
                                         @endif  
-                                        <div class="d-flex align-items-center flex-nowrap pt-xl-0">
-                                            <button class="btn-search btn btn-primary btn-primary-outline-0 rounded-circle btn-lg-square" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                                        <div class="d-flex align-items-center flex-nowrap pt-xl-0 ">
+                                            <button class="btn-search btn btn-secondary btn-primary-outline-0 rounded-circle btn-lg-square" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
                                             {{-- <a href="appointment.html" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4">Book Appointment</a> --}}
                                         </div>                 
                                 </div>
@@ -120,12 +120,12 @@
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content rounded-0">
                     <div class="modal-header">
-                        <h4 class="modal-title mb-0" id="exampleModalLabel">Don</h4>
+                        <h4 class="modal-title mb-0" id="exampleModalLabel"> Recherche par mot-clé </h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body d-flex align-items-center">
                         <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <input type="search" class="form-control p-3" placeholder="mot-clés" aria-describedby="search-icon-1">
                             <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
                         </div>
                     </div>
