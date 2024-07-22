@@ -48,9 +48,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/evenements/delete/{id}', [EvenementController::class, 'delete_evenement'])->name('evenements.delete');
     Route::post('/update-evenement/traitement',[EvenementController::class, 'update_evenement_traitement2'])->name('evenements.update_traitement');
     Route::post('/ajouter/traitement',[EvenementController::class, 'ajouter_evenement_traitement'])->name('evenements.evenement_traitement');
+    Route::post('/ajouter/traitement/evenement',[EvenementController::class, 'ajouter_evenement_traitement'])->name('ajouter.evenement_traitement');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/publication', [EvenementController::class, 'show_evenement'])->name('publication');
    
     Route::get('/delete-don/{id}',[DonController::class, 'delete_don'])->name('don.delete');
     Route::get('/update-don/{id}',[DonController::class, 'update_don'])->name('don.update');

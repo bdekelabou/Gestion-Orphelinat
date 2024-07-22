@@ -13,6 +13,7 @@ class EvenementController extends Controller
          $evenements = Evenement::all();
          return view('evenement.index', compact('evenements'));
      }
+     
  
      // Affiche le formulaire de création d'un nouvel événement
      public function create()
@@ -32,10 +33,17 @@ class EvenementController extends Controller
              'titre' => 'required',
              'description' => 'required',
              'date' => 'required|date',
+             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
          ]);
+         $path = null;
+         if ($request->hasFile('image')) {
+            $path = $request->file('image')->store('images', 'public');
+         }
+
          $evenement = new Evenement();
          $evenement->titre = $request->titre;
          $evenement->description = $request->description;
+         $evenement->image = $path;
          $evenement->date = $request->date;
          $evenement->save(); 
  
@@ -45,6 +53,11 @@ class EvenementController extends Controller
      public function show(Evenement $evenement)
      {
          return view('evenement.show', compact('evenement'));
+     }
+     public function show_evenement()
+     {
+        $events = Evenement::all();
+        return view('evenement.publication', compact('events'));
      }
  
      // Affiche le formulaire de modification d'un événement existant

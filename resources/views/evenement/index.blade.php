@@ -10,6 +10,7 @@
                     <th>ID</th>
                     <th>Titre</th>
                     <th>Description</th>
+                    <th>Image</th>
                     <th>Date</th>
                 </tr>
             </thead>
@@ -19,6 +20,9 @@
                         <td>{{ $evenement->id }}</td>
                         <td>{{ $evenement->titre }}</td>
                         <td>{{ $evenement->description }}</td>
+                        <td>   
+                        <img src="{{ Vite::asset('storage/app/public/'.$evenement->image) }}" width="100">
+                        </td>
                         <td>{{ $evenement->date }}</td>
                         <td>
                             {{-- <a href="{{ route('evenements.show', $evenement->id) }}" class="btn btn-info">Voir</a> --}}
@@ -29,5 +33,6 @@
                 @endforeach
             </tbody>
         </table>
+        <a href="{{ route('publication') }}"  class="btn btn-success">VOIR LES EVENEMENTS A L'ACCUEIL</a>
     </div>
 @endsection
