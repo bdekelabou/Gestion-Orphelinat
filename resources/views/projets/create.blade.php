@@ -1,8 +1,9 @@
 @extends('layouts.admin')
 
 @section('content')
+
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center"> <!-- Utilisation de justify-content-center pour centrer horizontalement -->
         <div class="col-md-6 col-lg-4">
             <h1 class="text-center mb-4">Ajouter un Projet</h1>
             <form method="POST" action="{{ route('projets.store') }}">
@@ -10,7 +11,7 @@
 
                 <!-- Nom -->
                 <div class="form-group">
-                    <label for="nom">{{ __('Titre') }}</label>
+                    <label for="nom">{{ __('Nom') }}</label>
                     <input id="nom" class="form-control" type="text" name="nom" value="{{ old('nom') }}" required autofocus />
                     @error('nom')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
@@ -37,21 +38,29 @@
 
                 <!-- Date de Début -->
                 <div class="form-group">
-                    <label for="date_debut">{{ __('Date de début du projet ') }}</label>
+                    <label for="date_debut">{{ __('Date de realisation projet') }}</label>
                     <input id="date_debut" class="form-control" type="date" name="date_debut" value="{{ old('date_debut') }}" required />
                     @error('date_debut')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror
                 </div>
 
-                <!-- Statut -->
-                <div class="form-group">
-                    <label for="statut">{{ __('Statut') }}</label>
-                    <input id="statut" class="form-control" type="text" name="statut" value="{{ old('statut') }}" required />
+                  <!-- Statut -->
+                  <div class="form-group">
+                    <label for="statut">{{ __('Statut') }}</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="statut" id="actif" value="1" {{ old('statut') == '1' ? 'checked' : '' }}>
+                        <label class="form-check-label" for="actif">{{ __('Actif') }}</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="statut" id="inactif" value="0" {{ old('statut') == '0' ? 'checked' : '' }}>
+                        <label class="form-check-label" for="inactif">{{ __('Inactif') }}</label>
+                    </div>
                     @error('statut')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror
                 </div>
+
 
                 <div class="form-group mt-4 text-center">
                     <button type="submit" class="btn btn-primary">Ajouter</button>
@@ -61,4 +70,5 @@
         </div>
     </div>
 </div>
+
 @endsection

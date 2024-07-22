@@ -15,7 +15,7 @@
                                 <th style="width: 150px;">Nom</th>
                                 <th style="width: 300px;">Description</th>
                                 <th style="width: 100px;">Budget</th>
-                                <th style="width: 150px;">Date de début</th>
+                                <th style="width: 150px;">Date de realisation projet</th>
                                 <th style="width: 100px;">Statut</th>
                                 <th style="width: 200px;">Actions</th>
                             </tr>
@@ -26,12 +26,11 @@
                                 <td>{{ $projet->id }}</td>
                                 <td>{{ $projet->nom }}</td>
                                 <td>{{ $projet->description }}</td>
-                                <td>{{ $projet->budget }}</td>
+                                <td>{{ $projet->Budget }}</td>
                                 <td>{{ $projet->date_debut }}</td>
-                                <td>{{ $projet->statut }}</td>
+                                <td>{{ $projet->statut ? 'Actif' : 'Inactif' }}</td>
                                 <td style="white-space: nowrap;">
-                                    <!-- <a href="{{ route('projets.show', $projet->id) }}" class="btn btn-info">Voir</a> -->
-                                    <a href="{{ route('projets.edit', $projet->id) }}" class="btn btn-warning">Éditer</a>
+                                    <a href="{{ route('projets.editer', $projet->id) }}" class="btn btn-warning">Éditer</a>
                                     <form action="{{ route('projets.destroy', $projet->id) }}" method="POST" style="display:inline-block;">
                                         @csrf
                                         @method('DELETE')

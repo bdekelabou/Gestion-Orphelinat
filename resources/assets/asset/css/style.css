@@ -137,10 +137,24 @@
 
 
 /*** Navbar Start ***/
+#maxi {
+    font-weight: bold !important; 
+    font-size: 30px !important;
+}
+
 .ange {
     padding: 0;
     transition: 0.5s;
     background: red; /* Assurez-vous que cette variable est correctement définie ou remplacez-la directement */
+}
+.angel {
+    color: #884CD2;
+    font-weight: bold;
+}
+
+.angel:hover {
+    color: #07D0FD;
+    font-weight: bold;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -197,9 +211,12 @@
         border-top: none !important;
     }
 }
+.input-group-text i.fa-search {
+    color: #07D0FD; /* Changer la couleur de l'icône ici */
+}
 
 #searchModal .modal-content {
-    background: rgba(250, 250, 250, 0.6);
+    background: rgba(228, 230, 232, 0.6);
 }
 /*** Navbar End ***/
 
@@ -255,10 +272,10 @@
 }
 
 #carouselId .carousel-indicators li.active {
-    background: var(--bs-primary);
-    border-color: var(--bs-primary);
-    border-right: 15px solid var(--bs-primary);
-    border-left: 15px solid var(--bs-primary);
+    background: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+    border-right: 15px solid var(--bs-secondary);
+    border-left: 15px solid var(--bs-secondary);
 }
 
 /* Custom button styles */
@@ -297,23 +314,29 @@
 }
 
 .services .services-item:hover {
-    background: var(--bs-primary) !important;
-    border-color: var(--bs-secondary) !important;
+    background: var(--bs-secondary) !important;
+    border-color: var(--bs-warning) !important;
+}
+.services .services-item .services-content p,
+.services .services-item .services-content h3 {
+    color: var(--bs-dark) !important;
+    transition: 0.5s;
 }
 
 .services .services-item:hover .services-content p,
 .services .services-item:hover .services-content h3 {
-    color: var(--bs-white);
+    color: var(--bs-light) !important;
     transition: 0.5s;
 }
 
 .services .services-item:hover .services-content a.btn {
-    background: var(--bs-white);
-    color: var(--bs-primary) !important;
+    background: var(--bs-warning);
+    color: var(--bs-white) !important;
 }
 
 .services .services-item:hover .services-content a.btn:hover {
-    color: var(--bs-white) !important;
+    color: var(--bs-dark) !important;
+    background-color: #C2FED6 !important;
 }
 
 .services .services-item .services-img {
@@ -326,6 +349,13 @@
 
 .services .services-item .services-img img:hover {
     transform: scale(1.3);
+}
+.bg-light {
+    background: #c4f7d5 !important;
+}
+
+#me:hover {
+    background-color: var(--bs-warning) !important;
 }
 /*** Services End ***/
 
@@ -558,7 +588,6 @@
     opacity: 1;
 }
 /*** Events End ***/
-
 
 /*** Pricing Start ***/
 .pricing {

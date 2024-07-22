@@ -28,7 +28,7 @@
 
             <!-- Date de Début -->
             <div class="form-group mb-4">
-                <label for="date_debut">{{ __('Date de début du projet') }}</label>
+                <label for="date_debut">{{ __('Date de realisation projet') }}</label>
                 <input id="date_debut" class="form-control w-100" type="date" name="date_debut" value="{{ $projet->date_debut }}" required />
                 @error('date_debut_du_projet')
                 <div class="alert alert-danger mt-2">{{ $message }}</div>
@@ -37,31 +37,31 @@
 
             <!-- Budget -->
             <div class="form-group mb-4">
-                <label for="budget">{{ __('Budget') }}</label>
-                <input id="budget" class="form-control w-100" type="number" name="budget" value="{{ $projet->budget }}" required />
-                @error('budget')
+                <label for="Budget">{{ __('Budget') }}</label>
+                <input id="Budget" class="form-control w-100" type="number" name="Budget" value="{{ $projet->Budget }}" required />
+                @error('Budget')
                 <div class="alert alert-danger mt-2">{{ $message }}</div>
                 @enderror
             </div>
 
-            <!-- Statut -->
-            <div class="form-group mb-4">
-                <label for="statut">{{ __('Statut') }}</label>
-                <input id="statut" class="form-control w-100" type="text" name="statut" value="{{ $projet->statut }}" required />
+             <!-- Statut -->
+            <div class="form-group">
+                <label for="statut">{{ __('Statut') }}</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="statut" id="actif" value="1" {{ old('statut', $projet->statut) == '1' ? 'checked' : '' }}>
+                    <label class="form-check-label" for="actif">{{ __('Actif') }}</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="statut" id="inactif" value="0" {{ old('statut', $projet->statut) == '0' ? 'checked' : '' }}>
+                    <label class="form-check-label" for="inactif">{{ __('Inactif') }}</label>
                 @error('statut')
                 <div class="alert alert-danger mt-2">{{ $message }}</div>
                 @enderror
             </div>
-
-            <div class="form-group mt-4 d-flex justify-content-between align-items-center">
-                <a href="{{ route('projets.index') }}" class="btn btn-secondary">
-                    {{ __('Annuler') }}
-                </a>
-                <button type="submit" class="btn btn-primary">
-                    {{ __('Mettre à jour') }}
-                </button>
+            <div class="form-group mt-4 text-center">
+                <button type="submit" class="btn btn-primary">Editer</button>
+                <a href="{{ route('projets.index') }}" class="btn btn-secondary">Retour</a>
             </div>
-
         </form>
     </div>
 </div>
