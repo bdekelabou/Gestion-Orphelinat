@@ -12,11 +12,12 @@
                         <thead>
                             <tr>
                                 <th style="width: 50px;">ID</th>
-                                <th style="width: 150px;">Nom</th>
-                                <th style="width: 300px;">Description</th>
+                                <th style="width: 150px;">Titre</th>
+                                <th style="width: 350px;">Description</th>
                                 <th style="width: 100px;">Budget</th>
-                                <th style="width: 150px;">Date de realisation projet</th>
+                                <th style="width: 100px;">Date de realisation projet</th>
                                 <th style="width: 100px;">Statut</th>
+                                <th style="width: 200px;">Publication</th>
                                 <th style="width: 200px;">Actions</th>
                             </tr>
                         </thead>
@@ -29,6 +30,19 @@
                                 <td>{{ $projet->Budget }}</td>
                                 <td>{{ $projet->date_debut }}</td>
                                 <td>{{ $projet->statut ? 'Actif' : 'Inactif' }}</td>
+                                <td style="white-space: nowrap;">                                    
+                                    <form action="{{ route('projets.publishItem', $projet->id) }}" method="POST" style="display:inline-block;">
+                                        @csrf
+
+                                        <button type="submit" class="btn btn-primary">publier</button>
+                                    </form>
+
+                                    <form action="{{ route('projets.publishItem', $projet->id) }}" method="POST" style="display:inline-block;">
+                                        @csrf
+
+                                        <button type="submit" class="btn btn-secondary">Depublier</button>
+                                    </form>
+                                </td>
                                 <td style="white-space: nowrap;">
                                     <a href="{{ route('projets.editer', $projet->id) }}" class="btn btn-warning">Éditer</a>
                                     <form action="{{ route('projets.destroy', $projet->id) }}" method="POST" style="display:inline-block;">

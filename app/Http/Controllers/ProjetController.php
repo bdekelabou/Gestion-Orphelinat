@@ -75,4 +75,27 @@ class ProjetController extends Controller
         $projet->delete();
         return redirect()->route('projets.index')->with('success', 'Projet supprimé avec succès');
     }
+
+    public function publishItem($id)
+    {
+        $projet = Projet::findOrFail($id);
+        // Mettez à jour le statut de l'élément ou effectuez toute autre action nécessaire
+        $projet->publier = true;
+        $projet->save();
+
+        // Redirigez vers le dashboard avec l'élément publié
+        return redirect()->route('welcome')->with('publishedItem', $projet);
+    }
+
+//     public function unpublishItem($id)
+//     {
+//         $projet = Projet::findOrFail($id);
+//         // Mettez à jour le statut de l'élément ou effectuez toute autre action nécessaire
+//         $projet->published = false;
+//         $projet->save();
+
+//         // Redirigez vers le dashboard avec l'élément non publié
+//         return redirect()->route('dashboard')->with('unpublishedItem', $projet);
+//     }
+
 }
