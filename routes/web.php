@@ -51,9 +51,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/ajouter/traitement/evenement',[EvenementController::class, 'ajouter_evenement_traitement'])->name('ajouter.evenement_traitement');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    Route::get('/publication', [EvenementController::class, 'show_evenement'])->name('publication');
-   
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');   
     Route::get('/delete-don/{id}',[DonController::class, 'delete_don'])->name('don.delete');
     Route::get('/update-don/{id}',[DonController::class, 'update_don'])->name('don.update');
     Route::post('/update/traitement',[DonController::class, 'update_don_traitement'])->name('update_don.traitement');
@@ -61,6 +59,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/ajouter',[DonController::class, 'ajouter_don'])->name('don.ajout');
     Route::post('/ajouter/traitement',[DonController::class, 'ajouter_don_traitement'])->name('ajouter_don.taitement');
 });
+
+Route::get('/publication', [EvenementController::class, 'show_evenement'])->name('publication');
 
 
 

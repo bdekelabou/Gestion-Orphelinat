@@ -14,10 +14,10 @@
                     <img src="{{Vite::asset('resources/assets/asset/img/carousel-3.jpg')}}" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-3 text-capitalize mb-3" style="color: #000000;">Bienvenue à l'Orphelinat SuperNova</h1>
+                            <h1 class="display-3 text-capitalize mb-3" style="color: #000000;">BIENVENUE A L'ORPHELINAT SUPERNOVA</h1>
                             <div class="d-flex align-items-center justify-content-center">
-                               <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">Nos Projets</a>
-                                <a class="btn custom-btn-donate rounded-pill py-3 px-5" href="#">Un Don</a>
+                               <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">NOS PROJETS</a>
+                                <a class="btn custom-btn-donate rounded-pill py-3 px-5"  href="{{route('don.ajout')}}">FAIRE UN DON</a>
                             </div>
                         </div>
                     </div>
@@ -26,10 +26,10 @@
                     <img src="{{Vite::asset('resources/assets/asset/img/carousel-2.jpg')}}" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">Participez à notre mission</h1>
+                            <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">FAITES PARTIS DE NOTRE MISSION</h1>
                             <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">Nos Projets</a>
-                                <a class="btn custom-btn-donate rounded-pill py-3 px-5" href="#">Un Don</a>
+                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">NOS PROJETS</a>
+                                <a class="btn custom-btn-donate rounded-pill py-3 px-5"  href="{{route('evenements.create')}}"> FAIRE UN DON</a>
                             </div>
                         </div>
                     </div>
@@ -38,10 +38,10 @@
                     <img src="{{Vite::asset('resources/assets/asset/img/carousel-1.jpg')}}" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">Soyez un pilier pour les enfants</h1>
+                            <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">SOYEZ UN PILIER POUR LES ENFANTS</h1>
                             <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">Nos Projets</a>
-                                <a class="btn custom-btn-donate rounded-pill py-3 px-5" href="#">Un Don</a>
+                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">NOS PROJETS</a>
+                                <a class="btn custom-btn-donate rounded-pill py-3 px-5" href="{{route('evenements.create')}}"> FAIRE UN DON</a>
                             </div>
                         </div>
                     </div>
