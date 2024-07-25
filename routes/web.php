@@ -9,9 +9,12 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MedicalController;
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// })->name('welcome');
+
+Route::get('/', [ProjetController::class, 'welcome'])->name('welcome');
+
 
 
 Route::get('don/visiteur', function () {
@@ -93,13 +96,11 @@ Route::resource('projets', ProjetController::class)->names([
     'update' => 'projets.update',
     'destroy' => 'projets.destroy',
 ]);
-// Route::middleware('auth')->group(function () {
-//     Route::get('/enfants', [EnfantController::class, 'index'])->name('enfants.index');
-//     Route::get('/enfants/create', [EnfantController::class, 'create'])->name('enfants.create');
-//     Route::post('/enfants', [EnfantController::class, 'store'])->name('enfants.store');
-//     Route::get('/enfants/{enfant}', [EnfantController::class, 'show'])->name('enfants.show');
-//     Route::get('/enfants/{enfant}/edit', [EnfantController::class, 'edit'])->name('enfants.edit');
-//     Route::put('/enfants/{enfant}', [EnfantController::class, 'update'])->name('enfants.update');
-//     Route::delete('/enfants/{enfant}', [EnfantController::class, 'destroy'])->name('enfants.destroy');
-// });
+Route::post('/projets/{id}/publish', [ProjetController::class, 'publishItem'])->name('projets.publishItem');
+
+Route::post('/projets/{id}/unpublish', [ProjetController::class, 'unpublishItem'])->name('projets.unpublishItem');
+// Route::post('/publish/{id}', [ProjetController::class, 'publishItem'])->name('publishItem');
+Route::get('/welcome', [ProjetController::class, 'welcome'])->name('welcome');
+
+
 require __DIR__.'/auth.php';

@@ -159,10 +159,10 @@
                                     <input type="date" class="form-control py-3 border-white bg-transparent">
                                 </div>
                                 <div class="col-lg-12">
-                                    <textarea class="form-control border-white bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
+                                    <textarea class="form-control border-white bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="votre commentaire"></textarea>
                                 </div>
                                 <div class="col-lg-12">
-                                    <button type="button" class="btn btn-primary btn-primary-outline-0 w-100 py-3 px-5">ENVOYER</button>
+                                    <button type="button" class="btn btn-secondary btn-primary-outline-0 w-100 py-3 px-5">SUBMIT NOW</button>
                                 </div>
                             </div>
                         </form>
@@ -204,7 +204,7 @@
                 </div>
             </div>
         </div>
-       <!-- Counter End -->
+    <!-- Counter End -->
 </div>
 
 
@@ -213,19 +213,29 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-4 text-center text-md-start mb-md-0">
+<<<<<<< HEAD
                         <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>SuperNova</a>, Un orphelinat pour tous les orphelins </span>
+=======
+                        <span class="text-light">
+                            <a href="/" class="supernova-color">
+                                <i class="fas fa-copyright text-light me-2"></i>SuperNova
+                            </a>, All rights reserved.
+                        </span>
+>>>>>>> c52c5f39c27b656f849fb04d60f96cca7d6ec17b
                     </div>
                     <div class="col-md-4">
-                        <div class="d-flex justify-content-center">
-                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
-                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
-                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
-                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
+                        <div class="d-flex justify-content-center social-links">
+                            <a href="" class="btn btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="btn btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="btn btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="" class="btn btn-light-outline-0 btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
+                    
                     <div class="col-md-4 text-center text-md-end text-white">
                         <p> Developper par Ange & Zaria</p>
                     </div>
+                </div>
                     {{-- <div class="d-flex justify-content-center">
                         <div class="col-md-4">
                             &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; version 1.0
@@ -237,7 +247,7 @@
     <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+    <a href="#" class="btn btn-custom btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
             
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
