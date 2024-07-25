@@ -6,7 +6,7 @@
     <div class="row justify-content-center"> <!-- Utilisation de justify-content-center pour centrer horizontalement -->
         <div class="col-md-6 col-lg-4">
             <h1 class="text-center mb-4">Ajouter un Projet</h1>
-            <form method="POST" action="{{ route('projets.store') }}">
+            <form method="POST" action="{{ route('projets.store') }}" enctype="multipart/form-data">
                 @csrf
 
                 <!-- Nom -->
@@ -21,7 +21,7 @@
                 <!-- Description -->
                 <div class="form-group">
                     <label for="description">{{ __('Description') }}</label>
-                    <input id="description" class="form-control" type="text" name="description" value="{{ old('description') }}" required />
+                    <textarea id="description" class="form-control" name="description" rows="4" required>{{ old('description') }}</textarea>
                     @error('description')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror
@@ -45,8 +45,8 @@
                     @enderror
                 </div>
 
-                  <!-- Statut -->
-                  <div class="form-group">
+                <!-- Statut -->
+                <div class="form-group">
                     <label for="statut">{{ __('Statut') }}</label><br>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="statut" id="actif" value="1" {{ old('statut') == '1' ? 'checked' : '' }}>
@@ -61,6 +61,23 @@
                     @enderror
                 </div>
 
+                <!-- Image -->
+                <div class="form-group">
+                    <label for="image">{{ __('Image') }}</label>
+                    <input type="file" class="form-control" id="image" name="image">
+                    @error('image')
+                        <div class="alert alert-danger mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <!-- Detail -->
+                <div class="form-group">
+                    <label for="detail">{{ __('Detail') }}</label>
+                    <textarea class="form-control" id="detail" name="detail" rows="8">{{ old('detail') }}</textarea>
+                    @error('detail')
+                        <div class="alert alert-danger mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
 
                 <div class="form-group mt-4 text-center">
                     <button type="submit" class="btn btn-primary">Ajouter</button>
