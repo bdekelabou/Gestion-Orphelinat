@@ -60,6 +60,7 @@
 <!-- Carousel End -->
 
 <!-- Services Start -->
+
 <div class="container-fluid services py-5">
     <div class="container py-5">
         <div class="mx-auto text-center mb-5" style="max-width: 800px;">
@@ -89,8 +90,15 @@
                                 <img src="{{ asset('storage/' . $projet->image) }}" alt="Image du projet" style="max-width: 200px; max-height:200px margin-top: 10px;">
                             </div>
                         </div>
+
+                    </div> --}}
+                    <div class="col-12">
+                        <div class="services-btn text-center">
+                            <a href="#" class="btn btn-secondary btn-primary-outline-0 rounded-pill py-3 px-5" id="me">Service More</a>
+                        </div>
                     </div>
                 </div>
+                   
             </div>
             @endforeach
         </div>

@@ -17,6 +17,7 @@ class Projet extends Model
         'publier',
         'image',
         'detail'
+
     ];
     
 

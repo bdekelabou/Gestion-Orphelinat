@@ -112,6 +112,7 @@ class ProjetController extends Controller
     public function publishItem($id)
     {
         $projet = Projet::findOrFail($id);
+
         $projet->publier = true;
         $projet->save();
 
@@ -134,5 +135,6 @@ class ProjetController extends Controller
         // Redirigez vers le dashboard avec l'élément non publié
         return redirect()->route('projets.index')->with('success', 'Projet retirer avec succes');
     }
+
 
 }

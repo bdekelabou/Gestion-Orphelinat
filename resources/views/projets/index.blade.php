@@ -64,7 +64,6 @@
 
                                         <button type="submit" class="btn btn-primary">publier</button>
                                     </form>
-
                                     <form action="{{ route('projets.unpublishItem', $projet->id) }}" method="POST" style="display:inline-block;">
                                         @csrf
 
