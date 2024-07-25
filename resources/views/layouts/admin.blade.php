@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<<<<<<< HEAD
-=======
-     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
->>>>>>> 59979245fafead53c41fb0f8e641776616024cc8
     <title>SuperNova Fundation</title>
     <meta
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"name="viewport"/>

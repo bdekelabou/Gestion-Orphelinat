@@ -17,7 +17,7 @@
                             <h1 class="display-3 text-capitalize mb-3" style="color: #000000;">BIENVENUE A L'ORPHELINAT SUPERNOVA</h1>
                             <div class="d-flex align-items-center justify-content-center">
                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">NOS PROJETS</a>
-                                <a class="btn custom-btn-donate rounded-pill py-3 px-5"  href="{{route('don.ajout')}}">FAIRE UN DON</a>
+                                <a class="btn custom-btn-donate rounded-pill py-3 px-5"  href="/don/visiteur">FAIRE UN DON</a>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                             <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">FAITES PARTIS DE NOTRE MISSION</h1>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">NOS PROJETS</a>
-                                <a class="btn custom-btn-donate rounded-pill py-3 px-5"  href="{{route('evenements.create')}}"> FAIRE UN DON</a>
+                                <a class="btn custom-btn-donate rounded-pill py-3 px-5"  href="/don/visiteur"> FAIRE UN DON</a>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                             <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">SOYEZ UN PILIER POUR LES ENFANTS</h1>
                             <div class="d-flex align-items-center justify-content-center">
                                 <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">NOS PROJETS</a>
-                                <a class="btn custom-btn-donate rounded-pill py-3 px-5" href="{{route('evenements.create')}}"> FAIRE UN DON</a>
+                                <a class="btn custom-btn-donate rounded-pill py-3 px-5" href="/don/visiteur"> FAIRE UN DON</a>
                             </div>
                         </div>
                     </div>

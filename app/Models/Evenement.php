@@ -9,5 +9,11 @@ class Evenement extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['titre', 'description', 'date', 'image'];
+    protected $fillable = ['titre', 'description', 'date', 'image', 'status_id'];
+
+    public function status()
+    {
+        return $this->belongsTo(Status::class);
+    }
 }
+

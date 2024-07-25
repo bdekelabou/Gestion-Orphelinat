@@ -13,6 +13,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('don/visiteur', function () {
+    return view('don.donVisiteur');
+});
+
 Route::get('/apropos', function () {
     return view('visiteurs.apropos');
 });
@@ -61,6 +66,8 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/publication', [EvenementController::class, 'show_evenement'])->name('publication');
+Route::post('/evenements/{evenement}/publier', [EvenementController::class, 'publier'])->name('evenements.publier');
+Route::post('/evenements/{evenement}/depublier', [EvenementController::class, 'depublier'])->name('evenements.depublier');
 
 
 

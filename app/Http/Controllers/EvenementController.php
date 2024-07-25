@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Evenement;
+use App\Models\Status;
 use Illuminate\Http\Request;
 
 class EvenementController extends Controller
@@ -10,7 +11,7 @@ class EvenementController extends Controller
      // Affiche la liste des événements
      public function index()
      {
-         $evenements = Evenement::all();
+         $evenements = Evenement::with('status')->get();
          return view('evenement.index', compact('evenements'));
      }
      
@@ -18,7 +19,8 @@ class EvenementController extends Controller
      // Affiche le formulaire de création d'un nouvel événement
      public function create()
      {
-         return view('evenement.create');
+        $statuses = Status::all();
+         return view('evenement.create', compact('statuses'));
      }
  
      // Enregistre un nouvel événement
@@ -33,6 +35,7 @@ class EvenementController extends Controller
              'titre' => 'required',
              'description' => 'required',
              'date' => 'required|date',
+             'status_id' => 'required|exists:status,id',
              'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
          ]);
          $path = null;
@@ -45,6 +48,7 @@ class EvenementController extends Controller
          $evenement->description = $request->description;
          $evenement->image = $path;
          $evenement->date = $request->date;
+         $evenement->status_id = $request->status_id;
          $evenement->save(); 
  
          return redirect('/evenements/liste')->with('status','L\'evenement a bien été ajouté');
@@ -63,7 +67,8 @@ class EvenementController extends Controller
      // Affiche le formulaire de modification d'un événement existant
      public function edit(Evenement $evenement)
      {
-         return view('evenement.edit', compact('evenement'));
+        $statuses = Status::all();
+         return view('evenement.edit', compact('evenement', 'statuses'));
      }
  
      // Met à jour un événement existant
@@ -80,6 +85,7 @@ class EvenementController extends Controller
              'titre' => 'required',
              'date' => 'required|date',
              'description' => 'required',
+             'status_id' => 'required|exists:status,id',
          ]);
  
          $evenement->update($request->all());
