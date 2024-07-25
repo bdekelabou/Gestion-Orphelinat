@@ -26,7 +26,16 @@ class ProjetController extends Controller
             'date_debut' => 'required|date',
             'Budget' => 'required|numeric',
             'statut' => 'required|boolean',
+           'image' => 'nullable|image|max:4048',
+            'detail' => 'nullable|string',
         ]);
+
+        //Gestion de la selection de l'image et la ou la stockee
+        $imagePath=null;
+            if($request -> hasFile('image')) {
+
+                $imagePath = $request -> file('image') ->store('images','public');
+            }
 
         Projet::create([
             'nom' => $request->nom,
@@ -34,6 +43,9 @@ class ProjetController extends Controller
             'date_debut' => $request->date_debut,
             'Budget' => $request->Budget,
             'statut' => $request->statut,
+            'detail' => $request->detail,
+            'image' => $imagePath,
+
         ]);
 
         return redirect()->route('projets.index')->with('success', 'Projet ajouté avec succès');
@@ -57,7 +69,26 @@ class ProjetController extends Controller
             'date_debut' => 'required|date',
             'Budget' => 'required|numeric',
             'statut' => 'required|boolean',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:4048',
+            'detail' => 'nullable|string',
         ]);
+
+         //Gestion de la selection de l'image et la ou la stockee
+         $imagePath=null;
+         if($request -> hasFile('image')) {
+            
+            if($projet->image){
+                //supprimer l'ancienne image si on selectionne une nouvelle image
+                Storage::disk('public') ->delete($projet->image);
+            }
+            
+            //stocker la nouvelle image
+            $imagePath = $request -> file('image') ->store('images','public');
+         }
+
+         else{
+            $imagePath =$projet->image;
+         }
 
         $projet->update([
             'nom' => $request->nom,
@@ -65,6 +96,8 @@ class ProjetController extends Controller
             'date_debut' => $request->date_debut,
             'Budget' => $request->Budget,
             'statut' => $request->statut,
+            'detail' => $request->detail,
+            'image' => $imagePath,
         ]);
 
         return redirect()->route('projets.index')->with('success', 'Projet modifié avec succès');
@@ -79,23 +112,29 @@ class ProjetController extends Controller
     public function publishItem($id)
     {
         $projet = Projet::findOrFail($id);
-        // Mettez à jour le statut de l'élément ou effectuez toute autre action nécessaire
+
         $projet->publier = true;
         $projet->save();
 
-        // Redirigez vers le dashboard avec l'élément publié
-        return redirect()->route('welcome')->with('publishedItem', $projet);
+        return redirect()->route('projets.index')->with('success', 'Projet publier avec succes',$projet->id);
     }
 
-//     public function unpublishItem($id)
-//     {
-//         $projet = Projet::findOrFail($id);
-//         // Mettez à jour le statut de l'élément ou effectuez toute autre action nécessaire
-//         $projet->published = false;
-//         $projet->save();
+    public function welcome()
+    {
+        $projets = Projet::where('publier', true)->get();
+        return view('welcome', compact('projets'));
+    }
+    
+    public function unpublishItem($id)
+    {
+        $projet = Projet::findOrFail($id);
+        // Mettez à jour le statut de l'élément ou effectuez toute autre action nécessaire
+        $projet->publier = false;
+        $projet->save();
 
-//         // Redirigez vers le dashboard avec l'élément non publié
-//         return redirect()->route('dashboard')->with('unpublishedItem', $projet);
-//     }
+        // Redirigez vers le dashboard avec l'élément non publié
+        return redirect()->route('projets.index')->with('success', 'Projet retirer avec succes');
+    }
+
 
 }

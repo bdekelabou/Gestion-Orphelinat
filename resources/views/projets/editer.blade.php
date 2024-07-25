@@ -58,6 +58,26 @@
                 <div class="alert alert-danger mt-2">{{ $message }}</div>
                 @enderror
             </div>
+          <!-- Image -->
+          <div class="form-group">
+                    <label for="image">{{ __('Image') }}</label>
+                    <input type="file" class="form-control" id="image" name="image">
+                    @if ($projet->image)
+                        <img src="{{ asset('storage/' . $projet->image) }}" alt="Image du projet" style="max-width: 200px; margin-top: 10px;">
+                    @endif
+                    @error('image')
+                        <div class="alert alert-danger mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                 <!-- Detail -->
+                 <div class="form-group">
+                    <label for="detail">{{__('Detail')}}</label>
+                    <textarea class="form-control" rows="8" cols="30" id="detail" name="detail">{{ old('detail', $projet->detail) }}</textarea>
+                    @error('detail')
+                        <div class="alert alert-danger mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
             <div class="form-group mt-4 text-center">
                 <button type="submit" class="btn btn-primary">Editer</button>
                 <a href="{{ route('projets.index') }}" class="btn btn-secondary">Retour</a>

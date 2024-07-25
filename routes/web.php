@@ -9,9 +9,12 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MedicalController;
 
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// })->name('welcome');
+
+Route::get('/', [ProjetController::class, 'welcome'])->name('welcome');
+
 
 Route::get('/apropos', function () {
     return view('visiteurs.apropos');
@@ -85,5 +88,10 @@ Route::resource('projets', ProjetController::class)->names([
     'destroy' => 'projets.destroy',
 ]);
 Route::post('/projets/{id}/publish', [ProjetController::class, 'publishItem'])->name('projets.publishItem');
+
+Route::post('/projets/{id}/unpublish', [ProjetController::class, 'unpublishItem'])->name('projets.unpublishItem');
+// Route::post('/publish/{id}', [ProjetController::class, 'publishItem'])->name('publishItem');
+Route::get('/welcome', [ProjetController::class, 'welcome'])->name('welcome');
+
 
 require __DIR__.'/auth.php';
