@@ -66,11 +66,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/don',[DonController::class, 'liste_don'])->name('don.liste');
     Route::get('/ajouter',[DonController::class, 'ajouter_don'])->name('don.ajout');
     Route::post('/ajouter/traitement',[DonController::class, 'ajouter_don_traitement'])->name('ajouter_don.taitement');
+    Route::get('/evenements/{id}/publier', [EvenementController::class, 'publier'])->name('evenements.publier');
+    Route::get('/evenements/{id}/depublier', [EvenementController::class, 'depublier'])->name('evenements.depublier');
 });
 
-Route::get('/publication', [EvenementController::class, 'show_evenement'])->name('publication');
-Route::post('/evenements/{evenement}/publier', [EvenementController::class, 'publier'])->name('evenements.publier');
-Route::post('/evenements/{evenement}/depublier', [EvenementController::class, 'depublier'])->name('evenements.depublier');
+Route::get('/publication', [EvenementController::class, 'showPublie'])->name('evenements.publie');
+//Route::get('/publication', [EvenementController::class, 'show_evenement'])->name('publication');
+Route::post('/ajouter/traitement/visiteur',[DonController::class, 'ajouter_don_traitement_visiteurs'])->name('ajouter_don.traitement.visiteur');
 
 
 

@@ -213,15 +213,11 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-4 text-center text-md-start mb-md-0">
-<<<<<<< HEAD
-                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>SuperNova</a>, Un orphelinat pour tous les orphelins </span>
-=======
                         <span class="text-light">
                             <a href="/" class="supernova-color">
                                 <i class="fas fa-copyright text-light me-2"></i>SuperNova
                             </a>, All rights reserved.
                         </span>
->>>>>>> c52c5f39c27b656f849fb04d60f96cca7d6ec17b
                     </div>
                     <div class="col-md-4">
                         <div class="d-flex justify-content-center social-links">
