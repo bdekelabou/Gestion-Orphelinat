@@ -10,7 +10,8 @@ class ProjetController extends Controller
 {
     public function index()
     {
-        $projets = Projet::all();
+
+        $projets = Projet::paginate(5);
         return view('projets.index', compact('projets'));
     }
 
@@ -114,10 +115,11 @@ class ProjetController extends Controller
     {
         $projet = Projet::findOrFail($id);
 
+        $projet->statut = true;
         $projet->publier = true;
         $projet->save();
 
-        return redirect()->route('projets.index')->with('success', 'Projet publier avec succes');
+        return redirect()->route('projets.index')->with('success', 'Projet publier avec succes',);
     }
 
     public function welcome()
@@ -129,18 +131,15 @@ class ProjetController extends Controller
     public function unpublishItem($id)
     {
         $projet = Projet::findOrFail($id);
+
+        // Mettez à jour le statut de l'élément ou effectuez toute autre action 
+        $projet->statut = false;
         // Mettez à jour le statut de l'élément ou effectuez toute autre action nécessaire
         $projet->publier = false;
         $projet->save();
 
         // Redirigez vers le dashboard avec l'élément non publié
         return redirect()->route('projets.index')->with('success', 'Projet retirer avec succes');
-    }
-
-    public function nosprojets()
-    {
-        $projets = Projet::where('publier', true)->get();
-        return view('visiteurs.nosprojets', compact('projets'));
     }
 
 

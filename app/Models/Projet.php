@@ -19,9 +19,4 @@ class Projet extends Model
         'detail'
 
     ];
-    
-
-
-   
-
 }

@@ -11,14 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('evenements', function (Blueprint $table) {
-            $table->id();
-            $table->string('titre');
-            $table->text('description')->nullable();
-            $table->string('image');
-            $table->date('date');
-            $table->timestamps();
-            
+        Schema::table('evenements', function (Blueprint $table) {
+            $table->boolean('is_published')->default(false);
         });
     }
 
@@ -27,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('evenements');
+        Schema::table('evenements', function (Blueprint $table) {
+            $table->dropColumn('is_published');
+        });
     }
 };

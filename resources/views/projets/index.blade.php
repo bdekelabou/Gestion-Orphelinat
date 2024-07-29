@@ -12,8 +12,61 @@
     max-height: 4.5em; /* Ajuster la hauteur en fonction du nombre de lignes */
     margin-bottom: 0;
 }
+<<<<<<< HEAD
 </style>
 
+=======
+<<<<<<< HEAD
+
+/* Conteneur des boutons de pagination */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0; /* Ajoute un espace autour des boutons */
+}
+
+/* Style des boutons de pagination */
+.nav-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    border: 1px solid #333; /* Bordure de couleur sombre */
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Style du bouton lorsque l'on passe la souris dessus */
+.nav-buttons .btn:hover {
+    background-color: #333; /* Fond noir plus clair */
+}
+
+/* Style du bouton lorsqu'il est désactivé */
+.nav-buttons .btn:disabled {
+    background-color: #666; /* Fond gris pour les boutons désactivés */
+    cursor: not-allowed;
+}
+
+/* Style pour les flèches */
+.arrow-left, .arrow-right {
+    width: 1rem;
+    height: 1rem;
+    fill: #fff; /* Couleur des flèches en blanc */
+}
+
+
+
+
+</style>
+=======
+</style>
+
+>>>>>>> da8901871b3b1e04e879f7c69fb4882224d9f5df
+>>>>>>> ff5450d68b22073c4e665c139df58d76a1d4f903
 <div class="row">
     <div class="col-12 grid-margin">
         <div class="card">
@@ -58,17 +111,43 @@
                                 <td>{{ $projet->Budget }}$</td>
                                 <td>{{ $projet->date_debut }}</td>
                                 <td>{{ $projet->statut ? 'Actif' : 'Inactif' }}</td>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                                <td style="white-space: nowrap;">         
+                                    @if($projet->statut)                           
+=======
+>>>>>>> ff5450d68b22073c4e665c139df58d76a1d4f903
                                 <td style="white-space: nowrap;">                                    
                                     <form action="{{ route('projets.publishItem', $projet->id) }}" method="POST" style="display:inline-block;">
                                         @csrf
 
                                         <button type="submit" class="btn btn-primary">publier</button>
                                     </form>
+<<<<<<< HEAD
+=======
+>>>>>>> da8901871b3b1e04e879f7c69fb4882224d9f5df
+>>>>>>> ff5450d68b22073c4e665c139df58d76a1d4f903
                                     <form action="{{ route('projets.unpublishItem', $projet->id) }}" method="POST" style="display:inline-block;">
                                         @csrf
 
                                         <button type="submit" class="btn btn-secondary">Depublier</button>
                                     </form>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+                                    
+                                        @else
+                                        <form action="{{ route('projets.publishItem', $projet->id) }}" method="POST" style="display:inline-block;">
+                                            @csrf
+
+                                            <button type="submit" class="btn btn-primary">publier</button>
+                                        </form>
+                                    @endif
+=======
+>>>>>>> da8901871b3b1e04e879f7c69fb4882224d9f5df
+>>>>>>> ff5450d68b22073c4e665c139df58d76a1d4f903
                                 </td>
                                 <td style="white-space: nowrap;">
                                     <a href="{{ route('projets.editer', $projet->id) }}" class="btn btn-warning">Éditer</a>
@@ -83,6 +162,13 @@
                         </tbody>
                     </table>
                 </div>
+<<<<<<< HEAD
+=======
+                <div class="pagination mt-4">
+                    {{-- {{ ($projets->links('pagination.customPaginate')) }} --}}
+                    @include('pagination.customPaginate', ['projets' => $projets])
+                </div>
+>>>>>>> ff5450d68b22073c4e665c139df58d76a1d4f903
             </div>
         </div>
     </div>

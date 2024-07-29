@@ -36,10 +36,35 @@ class DonController extends Controller
         return redirect('/ajouter')->with('status','Le don a bien été ajouté');
     }
 
+
+    public function ajouter_don_traitement_visiteurs(Request $request)
+    {
+        $request->validate([
+            'nom' => 'required|string|max:255',
+            'prenom' => 'required|string|max:255',
+            'amount' => 'required|numeric|min:1',
+            'nature' => 'nullable|string',
+            'espece' => 'nullable|string',
+            'paymentMethod' => 'nullable|string',
+            'paypalEmail' => 'nullable|email',
+            'tmoneyNumber' => 'nullable|string',
+            'tmoneyCode' => 'nullable|string',
+        ]);
+        $don = new Don();
+        $don->nom = $request->nom;
+        $don->prenom = $request->prenom;
+        $don->nature = $request->nature;
+        $don->espece = $request->amount;
+        $don->save();
+
+        return redirect('/')->with('status','Le don a bien été ajouté');
+    }
+
+
     public function update_don($id){
         $dons = Don::find($id);
 
-        return view('don.update', compact('dons')); 
+        return view('don.update', compact('dons'));
     }
 
     public function update_don_traitement(Request $request){
@@ -55,9 +80,10 @@ class DonController extends Controller
         $don->nature = $request->nature;
         $don->espece = $request->espece;
         $don->update();
-         
-        return redirect('/don')->with('status','Le don a bien été modifié'); 
-    } 
+
+
+        return redirect('/don')->with('status','Le don a bien été modifié');
+    }
 
     public function delete_don($id){
         $don= Don::find($id);

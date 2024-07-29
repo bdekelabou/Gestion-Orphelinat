@@ -4,7 +4,8 @@
     <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
         <div class="w-50">
             <h1 class="text-center mb-4">Ajouter un Evenement</h1>
-            <form method="POST" action="{{ route('evenements.evenement_traitement') }}">
+
+            <form method="POST" action="{{ route('ajouter.evenement_traitement') }} " enctype="multipart/form-data">
                 @csrf
 
                 <!-- titre -->
@@ -21,6 +22,16 @@
                     <label for="description">{{ __('Description') }}</label>
                     <input id="description" class="form-control w-100" type="text" name="description" value="{{ old('description') }}" required />
                     @error('description')
+                        <div class="alert alert-danger mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
+
+
+                <!-- image -->
+                <div class="form-group">
+                    <label for="image">{{ __('Image') }}</label>
+                    <input id="image"  class="form-control w-100" type="file" name="image" value="{{ old('image') }}" required autofocus />
+                    @error('image')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror
                 </div>

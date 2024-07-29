@@ -16,6 +16,7 @@
                             <label for="antécédents_familiaux">{{ __('antécédents_familiaux') }}</label>
                             <input id="antécédents_familiaux" class="form-control" type="text" name="antécédents_familiaux" value="{{ old('antécédents_familiaux') }}" required autofocus />
                             @error('antécédents_familiaux')
+
                                 <div class="alert alert-danger mt-2">{{ $message }}</div>
                             @enderror
                         </div>
@@ -119,7 +120,8 @@
             local: states
         });
 
-        $('#prenom').typeahead({ 
+
+        $('#prenom').typeahead({
             hint: true,
             highlight: true,
             minLength: 1
