@@ -21,7 +21,11 @@
                 <!-- Description -->
                 <div class="form-group">
                     <label for="description">{{ __('Description') }}</label>
+<<<<<<< HEAD
+                    <textarea id="description" class="form-control" name="description" rows="2" required>{{ old('description') }}</textarea>
+=======
                     <textarea id="description" class="form-control" name="description" rows="4" required>{{ old('description') }}</textarea>
+>>>>>>> da8901871b3b1e04e879f7c69fb4882224d9f5df
                     @error('description')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror

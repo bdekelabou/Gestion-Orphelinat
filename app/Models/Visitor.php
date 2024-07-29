@@ -5,9 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Evenement extends Model
+class Visitor extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['titre', 'description', 'date', 'image', 'is_published'];
+    protected $fillable =[
+        'ip_address',
+        'visited_at',
+    ];
 }
