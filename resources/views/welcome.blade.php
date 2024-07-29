@@ -14,10 +14,10 @@
                     <img src="{{Vite::asset('resources/assets/asset/img/carousel-3.jpg')}}" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-3 text-capitalize mb-3" style="color: #000000;">Bienvenue à l'Orphelinat SuperNova</h1>
+                            <h1 class="display-3 text-capitalize mb-3" style="color: #000000;">BIENVENUE A L'ORPHELINAT SUPERNOVA</h1>
                             <div class="d-flex align-items-center justify-content-center">
-                               <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">Nos Projets</a>
-                                <a class="btn custom-btn-donate rounded-pill py-3 px-5" href="#">Un Don</a>
+                               <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">NOS PROJETS</a>
+                                <a class="btn custom-btn-donate rounded-pill py-3 px-5"  href="/don/visiteur">FAIRE UN DON</a>
                             </div>
                         </div>
                     </div>
@@ -26,10 +26,10 @@
                     <img src="{{Vite::asset('resources/assets/asset/img/carousel-2.jpg')}}" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">Participez à notre mission</h1>
+                            <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">FAITES PARTIS DE NOTRE MISSION</h1>
                             <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">Nos Projets</a>
-                                <a class="btn custom-btn-donate rounded-pill py-3 px-5" href="#">Un Don</a>
+                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">NOS PROJETS</a>
+                                <a class="btn custom-btn-donate rounded-pill py-3 px-5"  href="/don/visiteur"> FAIRE UN DON</a>
                             </div>
                         </div>
                     </div>
@@ -38,10 +38,10 @@
                     <img src="{{Vite::asset('resources/assets/asset/img/carousel-1.jpg')}}" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">Soyez un pilier pour les enfants</h1>
+                            <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">SOYEZ UN PILIER POUR LES ENFANTS</h1>
                             <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">Nos Projets</a>
-                                <a class="btn custom-btn-donate rounded-pill py-3 px-5" href="#">Un Don</a>
+                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">NOS PROJETS</a>
+                                <a class="btn custom-btn-donate rounded-pill py-3 px-5" href="/don/visiteur"> FAIRE UN DON</a>
                             </div>
                         </div>
                     </div>
@@ -60,6 +60,10 @@
 <!-- Carousel End -->
 
 <!-- Services Start -->
+<<<<<<< HEAD
+=======
+
+>>>>>>> da8901871b3b1e04e879f7c69fb4882224d9f5df
 <div class="container-fluid services py-5">
     <div class="container py-5">
         <div class="mx-auto text-center mb-5" style="max-width: 800px;">
@@ -89,8 +93,18 @@
                                 <img src="{{ asset('storage/' . $projet->image) }}" alt="Image du projet" style="max-width: 200px; max-height:200px margin-top: 10px;">
                             </div>
                         </div>
+<<<<<<< HEAD
+=======
+
+                    </div> 
+                    <div class="col-12">
+                        <div class="services-btn text-center">
+                            <a href="#" class="btn btn-secondary btn-primary-outline-0 rounded-pill py-3 px-5" id="me">Service More</a>
+                        </div>
+>>>>>>> da8901871b3b1e04e879f7c69fb4882224d9f5df
                     </div>
                 </div>
+                   
             </div>
             @endforeach
         </div>

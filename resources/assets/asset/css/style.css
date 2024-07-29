@@ -66,22 +66,22 @@
 
 .btn-primary-outline-0 {
     border: 0;
-    color: var(--bs-white) !important;
+    color: var(--bs-white) ;
 }
 
 .btn-light-outline-0 {
     border: 0;
-    color: var(--bs-primary) !important;
+    color: var(--bs-primary) ;
 }
 
 .btn-primary-outline-0:hover {
-    background: var(--bs-secondary) !important;
-    color: var(--bs-white) !important;
+    background: var(--bs-secondary) ;
+    color: var(--bs-white) ;
 }
 
 .btn-light-outline-0:hover {
-    background: var(--bs-secondary) !important;
-    color: var(--bs-white) !important;
+    background: var(--bs-secondary) ;
+    color: var(--bs-white) ;
 }
 /*** Button end ***/
 
@@ -767,10 +767,47 @@
 }
 
 /*** Footer End ***/
-
+/* 
+.btn-light {
+    color: #07D0FD !important;
+} */
 /*** copyright Start ***/
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-    background: var(--bs-dark) !important;
+    background: #333333 !important;
 }
 /*** copyright end ***/
+
+.social-links a {
+    background-color: #666666; /* Couleur de fond des boutons */
+    color: #07D0FD; /* Couleur des icônes par défaut */
+    border: none; /* Supprimer la bordure si nécessaire */
+}
+
+
+
+.social-links i {
+    color: #07D0FD; /* Couleur des icônes par défaut */
+}
+
+.social-links a:hover i {
+    color:#07D0FD; /* Couleur des icônes au survol */
+}
+
+.supernova-color {
+    color: #884CD2;
+}
+
+.supernova-color:hover {
+    color: #16cce8 !important; 
+}
+
+.btn-custom {
+    background-color: #C2FED6; /* Couleur de fond */
+    border: none; /* Enlever la bordure si nécessaire */
+}
+
+.btn-custom i {
+    color: #07D0FD; /* Couleur de l'icône */
+}
+

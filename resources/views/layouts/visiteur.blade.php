@@ -40,7 +40,7 @@
                             <div class="d-flex flex-wrap">
                                 <a href="#" class="me-4"><i class="fas fa-map-marker-alt me-2"></i>Localisation</a>
                                 <a href="#" class="me-4"><i class="fas fa-phone-alt me-2"></i>+22893849200</a>
-                                <a href="#"><i class="fas fa-envelope me-2"></i>Example@gmail.com</a>
+                                <a href="#"><i class="fas fa-envelope me-2"></i>supernova@gmail.com</a>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -71,7 +71,7 @@
                             <a href="/apropos" class="nav-item nav-link">A propos</a>
                             <a href="/nosprojets" class="nav-item nav-link">Nos Projets</a>
                             <a href="/gallery" class="nav-item nav-link">Galleries</a>
-                            <a href="/Equipe" class="nav-item nav-link">Evenement</a>
+                            <a href="/publication" class="nav-item nav-link">Evenement</a>
                             <a href="/contact" class="nav-item nav-link">Contact</a>
                         </div>
                                             @if (Route::has('login'))
@@ -149,7 +149,7 @@
                             <div class="row gy-3 gx-4">
                                 <div class="col-lg-6">
                                     <select class="form-select py-3 border-white bg-transparent" aria-label="Default select example">
-                                        <option selected>Que commentez vous</option>
+                                        <option selected>Commentaire</option>
                                         <option value="1">l'Orphelinat</option>
                                         <option value="2">le site</option>
                                         <option value="3">suggestion</option>
@@ -159,10 +159,10 @@
                                     <input type="date" class="form-control py-3 border-white bg-transparent">
                                 </div>
                                 <div class="col-lg-12">
-                                    <textarea class="form-control border-white bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
+                                    <textarea class="form-control border-white bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="votre commentaire"></textarea>
                                 </div>
                                 <div class="col-lg-12">
-                                    <button type="button" class="btn btn-primary btn-primary-outline-0 w-100 py-3 px-5">SUBMIT NOW</button>
+                                    <button type="button" class="btn btn-secondary btn-primary-outline-0 w-100 py-3 px-5">SUBMIT NOW</button>
                                 </div>
                             </div>
                         </form>
@@ -197,14 +197,14 @@
                         </div>
                         <div class="d-flex justify-content-between fs-5 text-white mb-4">
                             <p>Dimanche:</p>
-                            <p>CLOSED</p>
+                            <p>Fermé</p>
                         </div>
                         <p class="text-dark">Faites un tour pour voire et patagez la joie de nos enfants.</p>
                     </div>
                 </div>
             </div>
         </div>
-       <!-- Counter End -->
+    <!-- Counter End -->
 </div>
 
 
@@ -213,19 +213,25 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-4 text-center text-md-start mb-md-0">
-                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>SuperNova</a>, All right reserved. </span>
+                        <span class="text-light">
+                            <a href="/" class="supernova-color">
+                                <i class="fas fa-copyright text-light me-2"></i>SuperNova
+                            </a>, All rights reserved.
+                        </span>
                     </div>
                     <div class="col-md-4">
-                        <div class="d-flex justify-content-center">
-                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
-                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
-                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
-                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
+                        <div class="d-flex justify-content-center social-links">
+                            <a href="" class="btn btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="btn btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="btn btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="" class="btn btn-light-outline-0 btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
+                    
                     <div class="col-md-4 text-center text-md-end text-white">
-                        <p> Designed By  ANGE & ZARIA </p>
+                        <p> Developper par Ange & Zaria</p>
                     </div>
+                </div>
                     {{-- <div class="d-flex justify-content-center">
                         <div class="col-md-4">
                             &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; version 1.0
@@ -237,7 +243,7 @@
     <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+    <a href="#" class="btn btn-custom btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
             
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

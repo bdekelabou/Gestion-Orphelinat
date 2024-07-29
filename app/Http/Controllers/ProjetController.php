@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Projet;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProjetController extends Controller
 {
@@ -130,11 +131,13 @@ class ProjetController extends Controller
         $projet = Projet::findOrFail($id);
         // Mettez à jour le statut de l'élément ou effectuez toute autre action 
         $projet->statut = false;
+        // Mettez à jour le statut de l'élément ou effectuez toute autre action nécessaire
         $projet->publier = false;
         $projet->save();
 
         // Redirigez vers le dashboard avec l'élément non publié
         return redirect()->route('projets.index')->with('success', 'Projet retirer avec succes');
     }
+
 
 }

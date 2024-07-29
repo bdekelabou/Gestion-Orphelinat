@@ -12,6 +12,7 @@
     max-height: 4.5em; /* Ajuster la hauteur en fonction du nombre de lignes */
     margin-bottom: 0;
 }
+<<<<<<< HEAD
 
 /* Conteneur des boutons de pagination */
 .nav-buttons {
@@ -57,6 +58,10 @@
 
 
 </style>
+=======
+</style>
+
+>>>>>>> da8901871b3b1e04e879f7c69fb4882224d9f5df
 <div class="row">
     <div class="col-12 grid-margin">
         <div class="card">
@@ -101,13 +106,23 @@
                                 <td>{{ $projet->Budget }}$</td>
                                 <td>{{ $projet->date_debut }}</td>
                                 <td>{{ $projet->statut ? 'Actif' : 'Inactif' }}</td>
+<<<<<<< HEAD
                                 <td style="white-space: nowrap;">         
                                     @if($projet->statut)                           
+=======
+                                <td style="white-space: nowrap;">                                    
+                                    <form action="{{ route('projets.publishItem', $projet->id) }}" method="POST" style="display:inline-block;">
+                                        @csrf
+
+                                        <button type="submit" class="btn btn-primary">publier</button>
+                                    </form>
+>>>>>>> da8901871b3b1e04e879f7c69fb4882224d9f5df
                                     <form action="{{ route('projets.unpublishItem', $projet->id) }}" method="POST" style="display:inline-block;">
                                         @csrf
 
                                         <button type="submit" class="btn btn-secondary">Depublier</button>
                                     </form>
+<<<<<<< HEAD
 
                                     
                                         @else
@@ -117,6 +132,8 @@
                                             <button type="submit" class="btn btn-primary">publier</button>
                                         </form>
                                     @endif
+=======
+>>>>>>> da8901871b3b1e04e879f7c69fb4882224d9f5df
                                 </td>
                                 <td style="white-space: nowrap;">
                                     <a href="{{ route('projets.editer', $projet->id) }}" class="btn btn-warning">Éditer</a>

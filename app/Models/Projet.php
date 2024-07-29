@@ -18,9 +18,4 @@ class Projet extends Model
         'image',
         'detail'
     ];
-    
-
-
-   
-
 }

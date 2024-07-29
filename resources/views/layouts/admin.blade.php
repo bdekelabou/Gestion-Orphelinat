@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>SuperNova Fundation</title>
     <meta
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"name="viewport"/>
@@ -143,13 +142,13 @@
               <div class="collapse" id="forms">
                 <ul class="nav nav-collapse">
                   <li>
-                    <a href="forms/forms.html">
+                    <a  href="{{route('evenements.create')}}">
                       <span class="sub-item">Ajouter un evenement</span>
                     </a>
                   </li>
 
                   <li>
-                    <a href="forms/forms.html">
+                    <a href="{{route('evenements.liste')}}">
                       <span class="sub-item">Liste des evenements</span>
                     </a>
                   </li>
@@ -179,20 +178,20 @@
             </li>
             <li class="nav-item">
               <a data-bs-toggle="collapse" href="#maps">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Maps</p>
+              <i class="fas fa-bars"></i>
+                <p>Dons</p>
                 <span class="caret"></span>
               </a>
               <div class="collapse" id="maps">
                 <ul class="nav nav-collapse">
                   <li>
-                    <a href="maps/googlemaps.html">
-                      <span class="sub-item">Google Maps</span>
+                    <a  href="{{Route('don.ajout')}}">
+                      <span class="sub-item">Ajouter un don</span>
                     </a>
                   </li>
                   <li>
-                    <a href="maps/jsvectormap.html">
-                      <span class="sub-item">Jsvectormap</span>
+                    <a href="{{Route('don.liste')}}">
+                      <span class="sub-item">Liste des dons</span>
                     </a>
                   </li>
                 </ul>
