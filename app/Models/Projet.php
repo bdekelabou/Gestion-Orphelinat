@@ -13,7 +13,10 @@ class Projet extends Model
         'description', 
         'Budget', 
         'date_debut', 
-        'statut'
+        'statut',
+        'publier',
+        'image',
+        'detail'
     ];
     
 
