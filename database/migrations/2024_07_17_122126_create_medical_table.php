@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('antécédents_familiaux');
             $table->string('vaccinations');
-            $table->string('maladies_antérieures');
+            $table->string('maladies_antérieures'); 
             $table->string(' examen_physique');
             $table->string('etat_mental');
             $table->string('autres_examens');

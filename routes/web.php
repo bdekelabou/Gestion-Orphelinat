@@ -80,7 +80,15 @@ Route::get('logout', function(){
 //  Route::resource('evenement', EvenementController::class);
 //  Route::resource('medical', MedicalController::class);
  // Dans routes/web.php
-Route::get('/medical/create', [MedicalController::class, 'create'])->name('medical.creation');
+Route::resource('medical', MedicalController::class)->names([
+    'index' => 'medical.host',
+    'create' => 'medical.creation',
+    'store' => 'medical.store',
+    'show' => 'medical.show',
+    'edit' => 'medical.editer', // Ici vous définissez le nom personnalisé
+    'update' => 'medical.update',
+    'destroy' => 'medical.destroy',
+]);
 Route::resource('projets', ProjetController::class)->names([
     'index' => 'projets.index',
     'create' => 'projets.create',

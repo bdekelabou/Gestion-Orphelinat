@@ -160,7 +160,7 @@
               <a data-bs-toggle="collapse" href="#tables">
                 <i class="fas fa-table"></i>
                 <p>Bilan-Medical</p>
-                <span class="caret"></span>n
+                <span class="caret"></span>
               </a>
               <div class="collapse" id="tables">
                 <ul class="nav nav-collapse">
@@ -170,7 +170,7 @@
                     </a>
                   </li>
                   <li>
-                    {{-- <a href="{{route('medical.host')}}"> --}}
+                    <a href="{{route('medical.host')}}">
                       <span class="sub-item">Liste des bilans</span>
                     </a>
                   </li>
