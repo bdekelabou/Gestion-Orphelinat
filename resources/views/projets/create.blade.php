@@ -45,7 +45,7 @@
                     @enderror
                 </div>
 
-                <!-- Statut -->
+                {{-- <!-- Statut -->
                 <div class="form-group">
                     <label for="statut">{{ __('Statut') }}</label><br>
                     <div class="form-check form-check-inline">
@@ -59,7 +59,7 @@
                     @error('statut')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror
-                </div>
+                </div> --}}
 
                 <!-- Image -->
                 <div class="form-group">
