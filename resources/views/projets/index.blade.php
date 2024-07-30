@@ -12,7 +12,50 @@
     max-height: 4.5em; /* Ajuster la hauteur en fonction du nombre de lignes */
     margin-bottom: 0;
 }
+
+/* Conteneur des boutons de pagination */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0; /* Ajoute un espace autour des boutons */
+}
+
+/* Style des boutons de pagination */
+.nav-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    border: 1px solid #333; /* Bordure de couleur sombre */
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Style du bouton lorsque l'on passe la souris dessus */
+.nav-buttons .btn:hover {
+    background-color: #333; /* Fond noir plus clair */
+}
+
+/* Style du bouton lorsqu'il est désactivé */
+.nav-buttons .btn:disabled {
+    background-color: #666; /* Fond gris pour les boutons désactivés */
+    cursor: not-allowed;
+}
+
+/* Style pour les flèches */
+.arrow-left, .arrow-right {
+    width: 1rem;
+    height: 1rem;
+    fill: #fff; /* Couleur des flèches en blanc */
+}
+
 </style>
+
+
 
 <div class="row">
     <div class="col-12 grid-margin">
@@ -58,17 +101,23 @@
                                 <td>{{ $projet->Budget }}$</td>
                                 <td>{{ $projet->date_debut }}</td>
                                 <td>{{ $projet->statut ? 'Actif' : 'Inactif' }}</td>
-                                <td style="white-space: nowrap;">                                    
-                                    <form action="{{ route('projets.publishItem', $projet->id) }}" method="POST" style="display:inline-block;">
-                                        @csrf
 
-                                        <button type="submit" class="btn btn-primary">publier</button>
-                                    </form>
+
+                                <td style="white-space: nowrap;">         
+                                    @if($projet->statut)                                                              
                                     <form action="{{ route('projets.unpublishItem', $projet->id) }}" method="POST" style="display:inline-block;">
                                         @csrf
 
                                         <button type="submit" class="btn btn-secondary">Depublier</button>
                                     </form>
+                                    
+                                        @else
+                                        <form action="{{ route('projets.publishItem', $projet->id) }}" method="POST" style="display:inline-block;">
+                                            @csrf
+
+                                            <button type="submit" class="btn btn-primary">publier</button>
+                                        </form>
+                                    @endif
                                 </td>
                                 <td style="white-space: nowrap;">
                                     <a href="{{ route('projets.editer', $projet->id) }}" class="btn btn-warning">Éditer</a>
@@ -82,6 +131,11 @@
                             @endforeach
                         </tbody>
                     </table>
+                </div>
+
+                <div class="pagination mt-4">
+                    {{-- {{ ($projets->links('pagination.customPaginate')) }} --}}
+                    @include('pagination.customPaginate', ['projets' => $projets])
                 </div>
             </div>
         </div>

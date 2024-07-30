@@ -14,9 +14,10 @@
                     <img src="{{Vite::asset('resources/assets/asset/img/carousel-3.jpg')}}" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
+
                             <h1 class="display-3 text-capitalize mb-3" style="color: #000000;">BIENVENUE A L'ORPHELINAT SUPERNOVA</h1>
                             <div class="d-flex align-items-center justify-content-center">
-                               <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">NOS PROJETS</a>
+                               <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="{{'/nosprojets'}}">NOS PROJETS</a>
                                 <a class="btn custom-btn-donate rounded-pill py-3 px-5"  href="/don/visiteur">FAIRE UN DON</a>
                             </div>
                         </div>
@@ -28,7 +29,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">FAITES PARTIS DE NOTRE MISSION</h1>
                             <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">NOS PROJETS</a>
+                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="{{'/nosprojets'}}">NOS PROJETS</a>
                                 <a class="btn custom-btn-donate rounded-pill py-3 px-5"  href="/don/visiteur"> FAIRE UN DON</a>
                             </div>
                         </div>
@@ -38,9 +39,10 @@
                     <img src="{{Vite::asset('resources/assets/asset/img/carousel-1.jpg')}}" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
+
                             <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">SOYEZ UN PILIER POUR LES ENFANTS</h1>
                             <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">NOS PROJETS</a>
+                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="{{'/nosprojets'}}">NOS PROJETS</a>
                                 <a class="btn custom-btn-donate rounded-pill py-3 px-5" href="/don/visiteur"> FAIRE UN DON</a>
                             </div>
                         </div>
@@ -60,7 +62,6 @@
 <!-- Carousel End -->
 
 <!-- Services Start -->
-
 <div class="container-fluid services py-5">
     <div class="container py-5">
         <div class="mx-auto text-center mb-5" style="max-width: 800px;">
@@ -91,16 +92,16 @@
                             </div>
                         </div>
 
+
                     </div> 
-                    <div class="col-12">
-                        <div class="services-btn text-center">
-                            <a href="#" class="btn btn-secondary btn-primary-outline-0 rounded-pill py-3 px-5" id="me">Service More</a>
-                        </div>
-                    </div>
-                </div>
-                   
+                </div>  
             </div>
             @endforeach
+            <div class="col-12">
+                <div class="services-btn text-center">
+                    <a href="{{'/nosprojets'}}" class="btn btn-secondary btn-primary-outline-0 rounded-pill py-3 px-5" id="me">Service More</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

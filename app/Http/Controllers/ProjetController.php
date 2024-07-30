@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Projet;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProjetController extends Controller
 {
     public function index()
     {
-        $projets = Projet::all();
+
+        $projets = Projet::paginate(5);
         return view('projets.index', compact('projets'));
     }
 
@@ -113,10 +115,11 @@ class ProjetController extends Controller
     {
         $projet = Projet::findOrFail($id);
 
+        $projet->statut = true;
         $projet->publier = true;
         $projet->save();
 
-        return redirect()->route('projets.index')->with('success', 'Projet publier avec succes',$projet->id);
+        return redirect()->route('projets.index')->with('success', 'Projet publier avec succes',);
     }
 
     public function welcome()
@@ -124,10 +127,19 @@ class ProjetController extends Controller
         $projets = Projet::where('publier', true)->get();
         return view('welcome', compact('projets'));
     }
+
+    public function nosprojets()
+    {
+        $projets = Projet::where('publier', true)->get();
+        return view('visiteurs.nosprojets', compact('projets'));
+    }
     
     public function unpublishItem($id)
     {
         $projet = Projet::findOrFail($id);
+
+        // Mettez à jour le statut de l'élément ou effectuez toute autre action 
+        $projet->statut = false;
         // Mettez à jour le statut de l'élément ou effectuez toute autre action nécessaire
         $projet->publier = false;
         $projet->save();

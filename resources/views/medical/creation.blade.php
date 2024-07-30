@@ -7,95 +7,87 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title text-center mb-4">Ajouter un Enfant</h4>
+                    <h4 class="card-title text-center mb-4">Faire un bilan</h4>
                     <form method="POST" action="{{ route('medical.store') }}">
                         @csrf
 
-                        <!-- Nom -->
+                        <!-- antécédents_familiaux -->
                         <div class="form-group">
-                            <label for="nom">{{ __('Nom') }}</label>
-                            <input id="nom" class="form-control" type="text" name="nom" value="{{ old('nom') }}" required autofocus />
-                            @error('nom')
+                            <label for="antécédents_familiaux">{{ __('antécédents_familiaux') }}</label>
+                            <input id="antécédents_familiaux" class="form-control" type="text" name="antécédents_familiaux" value="{{ old('antécédents_familiaux') }}" required autofocus />
+                            @error('antécédents_familiaux')
+
                                 <div class="alert alert-danger mt-2">{{ $message }}</div>
                             @enderror
                         </div>
 
-                        <!-- Prénom -->
-                        <div class="form-group">
-                            <label for="prenom">{{ __('Prénom') }}</label>
-                            <input id="prenom" class="form-control" type="text" name="prenom" value="{{ old('prenom') }}" required />
-                            @error('prenom')
-                                <div class="alert alert-danger mt-2">{{ $message }}</div>
-                            @enderror
-                        </div>
-
-                        <!-- Genre -->
-                        <div class="form-group">
-                            <label>{{ __('Genre') }}</label>
-                            <div class="d-flex">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="genre" id="genre_homme" value="homme" {{ old('genre') == 'homme' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="genre_homme">
-                                        {{ __('Homme') }}
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="genre" id="genre_femme" value="femme" {{ old('genre') == 'femme' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="genre_femme">
-                                        {{ __('Femme') }}
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="genre" id="genre_autre" value="autre" {{ old('genre') == 'autre' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="genre_autre">
-                                        {{ __('Autre') }}
-                                    </label>
-                                </div>
+                        <!-- vaccinations -->
+                            <div class="form-group">
+                                <label for="vaccinations">{{ __('vaccinations') }}</label>
+                                <input id="vaccinations" class="form-control" type="text" name="vaccinations" value="{{ old('vaccinations') }}" required />
+                                @error('vaccinations')
+                                    <div class="alert alert-danger mt-2">{{ $message }}</div>
+                                @enderror
                             </div>
-                            @error('genre')
-                                <div class="alert alert-danger mt-2">{{ $message }}</div>
-                            @enderror
-                        </div>
 
-                        <!-- Date de Naissance -->
-                        <div class="form-group">
-                            <label for="date_naissance">{{ __('Date de Naissance') }}</label>
-                            <input id="date_naissance" class="form-control" type="date" name="date_naissance" value="{{ old('date_naissance') }}" required />
-                            @error('date_naissance')
-                                <div class="alert alert-danger mt-2">{{ $message }}</div>
-                            @enderror
-                        </div>
+                        <!--maladies_antérieures -->
+                            <div class="form-group">
+                                <label for="maladies_antérieures">{{ __('maladies_antérieures') }}</label>
+                                <input id="maladies_antérieures" class="form-control" type="text" name="maladies_antérieures" value="{{ old('maladies_antérieures') }}" required />
+                                @error('maladies_antérieures')
+                                    <div class="alert alert-danger mt-2">{{ $message }}</div>
+                                @enderror
+                            </div>
 
-                        <!-- Situation Médicale -->
-                        <div class="form-group">
-                            <label for="situationMedicale">{{ __('Situation Médicale') }}</label>
-                            <select id="situationMedicale" class="form-control" name="situationMedicale">
-                                <option value="" disabled selected>-- Sélectionner --</option>
-                                <option value="En bonne santé" {{ old('situationMedicale') == 'En bonne santé' ? 'selected' : '' }}>En bonne santé</option>
-                                <option value="Souffrant" {{ old('situationMedicale') == 'Souffrant' ? 'selected' : '' }}>Souffrant</option>
-                                <option value="Dépressif" {{ old('situationMedicale') == 'Dépressif' ? 'selected' : '' }}>Dépressif</option>
-                            </select>
-                            @error('situationMedicale')
-                                <div class="alert alert-danger mt-2">{{ $message }}</div>
-                            @enderror
-                        </div>
+                        <!--examen_physique -->
+                            <div class="form-group">
+                                <label for="examen_physique">{{ __('examen_physique') }}</label>
+                                <input id="examen_physique" class="form-control" type="text" name="examen_physique" value="{{ old('examen_physique') }}" required />
+                                @error('examen_physique')
+                                    <div class="alert alert-danger mt-2">{{ $message }}</div>
+                                @enderror
+                            </div>
 
-                        <!-- Situation Scolaire -->
-                        <div class="form-group">
-                            <label for="situationScolaire">{{ __('Situation Scolaire') }}</label>
-                            <select id="situationScolaire" class="form-control" name="situationScolaire">
-                                <option value="" disabled selected>-- Sélectionner --</option>
-                                <option value="Scolarisé" {{ old('situationScolaire') == 'Scolarisé' ? 'selected' : '' }}>Scolarisé</option>
-                                <option value="Non scolarisé" {{ old('situationScolaire') == 'Non scolarisé' ? 'selected' : '' }}>Non scolarisé</option>
-                            </select>
-                            @error('situationScolaire')
-                                <div class="alert alert-danger mt-2">{{ $message }}</div>
-                            @enderror
-                        </div>
+                        <!--etat_mental -->
+                            <div class="form-group">
+                                <label for="etat_mental">{{ __('etat_mental') }}</label>
+                                <input id="etat_mental" class="form-control" type="text" name="etat_mental" value="{{ old('etat_mental') }}" required />
+                                @error('etat_mental')
+                                    <div class="alert alert-danger mt-2">{{ $message }}</div>
+                                @enderror
+                            </div>
+
+                             <!--autres_examens -->
+                             <div class="form-group">
+                                <label for="autres_examens">{{ __('autres_examens') }}</label>
+                                <input id="autres_examens" class="form-control" type="text" name="autres_examens" value="{{ old('autres_examens') }}" required />
+                                @error('autres_examens')
+                                    <div class="alert alert-danger mt-2">{{ $message }}</div>
+                                @enderror
+                            </div>
+
+
+                             <!--appareils_medicaux -->
+                             <div class="form-group">
+                                <label for="appareils_medicaux">{{ __('appareils_medicaux') }}</label>
+                                <input id="appareils_medicaux" class="form-control" type="text" name="appareils_medicaux" value="{{ old('appareils_medicaux') }}" required />
+                                @error('appareils_medicaux')
+                                    <div class="alert alert-danger mt-2">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            
+                             <!--soins_speciaux -->
+                             <div class="form-group">
+                                <label for="soins_speciaux">{{ __('soins_speciaux') }}</label>
+                                <input id="soins_speciaux" class="form-control" type="text" name="soins_speciaux" value="{{ old('soins_speciaux') }}" required />
+                                @error('soins_speciaux')
+                                    <div class="alert alert-danger mt-2">{{ $message }}</div>
+                                @enderror
+                            </div>
 
                         <div class="form-group mt-4 text-center">
                             <button type="submit" class="btn btn-primary">Ajouter</button>
-                            <a href="{{ route('enfants.index') }}" class="btn btn-secondary">Annuler</a>
+                            <a href="{{ route('medical.host') }}" class="btn btn-secondary">Annuler</a>
                         </div>
                     </form>
                 </div>

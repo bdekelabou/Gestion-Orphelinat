@@ -149,7 +149,7 @@
                             <div class="row gy-3 gx-4">
                                 <div class="col-lg-6">
                                     <select class="form-select py-3 border-white bg-transparent" aria-label="Default select example">
-                                        <option selected>Commentaire</option>
+                                        <option selected>Que commentez vous</option>
                                         <option value="1">l'Orphelinat</option>
                                         <option value="2">le site</option>
                                         <option value="3">suggestion</option>
