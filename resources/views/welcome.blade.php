@@ -88,7 +88,7 @@
                         </div>
                         <div class="col-4">
                             <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                <img src="{{ asset('storage/' . $projet->image) }}" alt="Image du projet" style="max-width: 200px; max-height:200px margin-top: 10px;">
+                                <img src="{{ asset('storage/' . $projet->image) }}" alt="Image du projet" style="max-width: 200px; max-height:200px ; margin-top: 10px;">
                             </div>
                         </div>
 
