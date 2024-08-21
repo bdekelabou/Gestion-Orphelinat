@@ -14,7 +14,7 @@ class EnfantController extends Controller
     public function index()
     {
         $enfants = Enfant::all();
-        return view('enfants.index', compact('enfants'));
+        return view('enfants.index', compact('enfants') );
     }
 
     /**
@@ -35,8 +35,6 @@ class EnfantController extends Controller
             'prenom' => 'required|string',
             'genre' => ['required', 'in:homme,femme,autre'],
             'date_naissance' => 'required|date',
-            'situationMedicale' => 'required|string|in:En bonne santé,Souffrant,Dépressif',
-            'situationScolaire' => 'required|string|in:Scolarisé,Non scolarisé',
         ]);
 
         $user = User::create([
@@ -62,7 +60,13 @@ class EnfantController extends Controller
     {
         return view('enfants.show', compact('enfant'));
     }
-
+    // public function showMedical($id)
+    // {
+    //     $enfant = Enfant::findOrFail($id);
+    //     $medical = $enfant->medical; // Assurez-vous que la relation est définie dans votre modèle
+    
+    //     return view('enfants.medical', compact('enfant', 'medical'));
+    // }
     /**
      * Affiche le formulaire d'édition d'un enfant.
      */

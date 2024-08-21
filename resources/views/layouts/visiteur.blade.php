@@ -39,9 +39,9 @@
                         <div class="col-lg-8">
                             <div class="d-flex flex-wrap">
                                 <a href="#" class="me-4"><i class="fas fa-map-marker-alt me-2"></i>Localisation</a>
-                                <a href="#" class="me-4"><i class="fas fa-phone-alt me-2"></i>+22893849200</a>
+                                <a href="#" class="me-4"><i class="fas fa-phone-alt me-2"></i>+228 91260205</a>
 
-                                <a href="#"><i class="fas fa-envelope me-2"></i>supernova@gmail.com</a>
+                                <a href="#"><i class="fas fa-envelope me-2"></i>angeines822@gmail.com</a>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -163,7 +163,7 @@
                                     <textarea class="form-control border-white bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="votre commentaire"></textarea>
                                 </div>
                                 <div class="col-lg-12">
-                                    <button type="button" class="btn btn-secondary btn-primary-outline-0 w-100 py-3 px-5">SUBMIT NOW</button>
+                                    <button type="button" class="btn btn-secondary btn-primary-outline-0 w-100 py-3 px-5">COMMENTEZ</button>
                                 </div>
                             </div>
                         </form>

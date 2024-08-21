@@ -8,6 +8,7 @@ use App\Http\Controllers\ProjetController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\VisitorController;
+use App\Http\Controllers\ScolaireController;
 
 
 
@@ -28,11 +29,6 @@ Route::get('/apropos', function () {
 
 route::get('/nosprojets', [ProjetController::class, 'nosprojets'])->name('nosprojets');
 
-
-
-// Route::get('/nosprojets',function() {
-//     return view('visiteurs.nosprojets');
-// });
 
 Route::get('/Equipe',function() {
     return view('visiteurs.Equipe');
@@ -87,22 +83,54 @@ Route::get('logout', function(){
     return to_route('login');
 });
 
- Route::resource('enfants', EnfantController::class);
-//  Route::resource('projets', ProjetController::class);
-//  Route::resource('evenement', EvenementController::class);
-//  Route::resource('medical', MedicalController::class);
- // Dans routes/web.php
+//  Route::resource('enfants', EnfantController::class);
 
-Route::get('/medical/create', [MedicalController::class, 'create'])->name('medical.creation');
+//Route pour enfant
+Route::resource('enfants', EnfantController::class)->names([
+    'index' => 'enfants.index',
+    'create' => 'enfants.create',
+    'store' => 'enfants.store',
+    'show' => 'enfants.show',
+    'edit' => 'enfants.edit', 
+    'update' => 'enfants.update',
+    'destroy' => 'enfants.destroy',
+]);
+
+
+
+Route::resource('medical', MedicalController::class)->names([
+    'index' => 'medical.host',
+    'create' => 'medical.creation',
+    'store' => 'medical.store',
+    'show' => 'medical.show',
+    'edit' => 'medical.editer', 
+    'update' => 'medical.update',
+    'destroy' => 'medical.destroy',
+]);
+// Route::get('/medical/{id}', [MedicalController::class, 'show'])->name('medical.show');
+// Route::get('/enfants/{id}/medical', [EnfantController::class, 'showMedical'])->name('enfants.show');
+
+//Route pour projet 
 Route::resource('projets', ProjetController::class)->names([
     'index' => 'projets.index',
     'create' => 'projets.create',
     'store' => 'projets.store',
     'show' => 'projets.show',
-    'edit' => 'projets.editer', // Ici vous définissez le nom personnalisé
+    'edit' => 'projets.editer', 
     'update' => 'projets.update',
     'destroy' => 'projets.destroy',
 ]);
+
+Route::resource('scolaire', ScolaireController::class)->names([
+    'index' => 'scolaire.index',
+    'create' => 'scolaire.create',
+    'store' => 'scolaire.store',
+    'show' => 'scolaire.show',
+    'edit' => 'scolaire.edit', 
+    'update' => 'scolaire.update',
+    'destroy' => 'scolaire.destroy',
+]);
+
 Route::post('/projets/{id}/publish', [ProjetController::class, 'publishItem'])->name('projets.publishItem');
 
 

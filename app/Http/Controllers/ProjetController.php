@@ -27,7 +27,7 @@ class ProjetController extends Controller
             'description' => 'required|string',
             'date_debut' => 'required|date',
             'Budget' => 'required|numeric',
-            'statut' => 'required|boolean',
+            // 'statut' => 'required|boolean',
            'image' => 'nullable|image|max:4048',
             'detail' => 'nullable|string',
         ]);
@@ -44,7 +44,7 @@ class ProjetController extends Controller
             'description' => $request->description,
             'date_debut' => $request->date_debut,
             'Budget' => $request->Budget,
-            'statut' => $request->statut,
+            // 'statut' => $request->statut,
             'detail' => $request->detail,
             'image' => $imagePath,
 
