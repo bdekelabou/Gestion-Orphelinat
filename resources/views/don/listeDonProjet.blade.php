@@ -23,7 +23,8 @@
                 <th>Nom</th>
                 <th>Prénom</th>
                 <th>Nature</th>
-                <th>Espèce</th>
+                <th>Montant</th>
+                <th>Projet</th>
                 <th>Actions</th>
             </tr>
            </thead> 
@@ -38,6 +39,7 @@
                 <td>{{$don->prenom}}</td>
                 <td>{{$don->nature}}</td>
                 <td>{{$don->espece}}</td>
+                <td>{{$don->projet}}</td>
                 <td>
                     <a href="/update-don/{{$don->id}}" class="btn btn-info">Modifier</a>
                     <a class="btn btn-danger">Supprimer</a>

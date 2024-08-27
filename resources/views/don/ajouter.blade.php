@@ -24,6 +24,7 @@
 
                 <form action="/ajouter/traitement" method="POST" class="form-group">
                     @csrf
+                    <input type="hidden" name="projet" value="{{ $projetName ?? 'null' }}">
                     <div class="form-group">
                         <label for="Nom">Nom</label>
                         <input type="text" class="form-control" id="Nom" name="nom">
@@ -41,7 +42,7 @@
 
                     <div class="form-group">
                         <label for="Espece">Espece</label>
-                        <input type="text" class="form-control" id="Espece" name="espece">
+                        <input type="number" class="form-control" id="Espece" name="espece">
                     </div>
                     <br>
                     <button type="submit" class="btn btn-primary">AJOUTER UN DON</button>

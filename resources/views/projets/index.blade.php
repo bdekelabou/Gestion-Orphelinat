@@ -98,7 +98,7 @@
                                         <img src="{{ asset('storage/' . $projet->image) }}" alt="{{ $projet->nom }}" class="img-thumbnail" style="max-width: 100px;">
                                     @endif
                                 </td>
-                                <td>{{ $projet->Budget }}$</td>
+                                <td>{{ $projet->budget }}$</td>
                                 <td>{{ $projet->date_debut }}</td>
                                 <td>{{ $projet->statut ? 'Actif' : 'Inactif' }}</td>
 

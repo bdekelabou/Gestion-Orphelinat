@@ -17,9 +17,9 @@ Route::get('/', [ProjetController::class, 'welcome'])->name('welcome');
 
 
 
-Route::get('don/visiteur', function () {
-    return view('don.donVisiteur');
-});
+// Route::get('don/visiteur', function () {
+//     return view('don.donVisiteur');
+// });
 
 Route::get('/apropos', function () {
     return view('visiteurs.apropos');
@@ -68,6 +68,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/update/traitement',[DonController::class, 'update_don_traitement'])->name('update_don.traitement');
     
     Route::get('/don',[DonController::class, 'liste_don'])->name('don.liste');
+    Route::get('/don/projet',[DonController::class, 'liste_don_projet'])->name('liste.don.projet');
+    Route::get('/don/visiteur/{projet_id}',[DonController::class, 'donViteur'])->name('don.visiteur'); // fdfdfd
     Route::get('/ajouter',[DonController::class, 'ajouter_don'])->name('don.ajout');
     Route::post('/ajouter/traitement',[DonController::class, 'ajouter_don_traitement'])->name('ajouter_don.taitement');
     Route::get('/evenements/{id}/publier', [EvenementController::class, 'publier'])->name('evenements.publier');
