@@ -39,8 +39,12 @@
                         <div class="col-lg-8">
                             <div class="d-flex flex-wrap">
                                 <a href="#" class="me-4"><i class="fas fa-map-marker-alt me-2"></i>Localisation</a>
-                                <a href="#" class="me-4"><i class="fas fa-phone-alt me-2"></i>+22893849200</a>
-                                <a href="#"><i class="fas fa-envelope me-2"></i>supernova@gmail.com</a>
+
+                                <a href="#" class="me-4"><i class="fas fa-phone-alt me-2"></i>+228 91260205</a>
+
+                                <a href="#"><i class="fas fa-envelope me-2"></i>angeines822@gmail.com</a>
+
+                               
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -71,7 +75,9 @@
                             <a href="/apropos" class="nav-item nav-link">A propos</a>
                             <a href="/nosprojets" class="nav-item nav-link">Nos Projets</a>
                             <a href="/gallery" class="nav-item nav-link">Galleries</a>
+
                             <a href="/publication" class="nav-item nav-link">Evenement</a>
+
                             <a href="/contact" class="nav-item nav-link">Contact</a>
                         </div>
                                             @if (Route::has('login'))
@@ -81,21 +87,21 @@
                                                         href="{{ url('/dashboard') }}"
                                                         class="rounded-md px-3 py-2 angel"
                                                     >
-                                                        Dashboard
+                                                        Tableau de bord
                                                     </a>
                                                 @else
                                                     <a
                                                         href="{{ route('login') }}"
                                                         class="rounded-md px-3 py-2 angel"
                                                     >
-                                                        Log in
+                                                    se connecter
                                                     </a>
                                                     @if (Route::has('register'))
                                                         <a
                                                             href="{{ route('register') }}"
                                                             class="rounded-md px-3 py-2 angel"
                                                         >
-                                                            Register
+                                                        s'inscrire
                                                         </a>
                                                     @endif
                                                 @endauth
@@ -149,7 +155,9 @@
                             <div class="row gy-3 gx-4">
                                 <div class="col-lg-6">
                                     <select class="form-select py-3 border-white bg-transparent" aria-label="Default select example">
+
                                         <option selected>Que commentez vous</option>
+
                                         <option value="1">l'Orphelinat</option>
                                         <option value="2">le site</option>
                                         <option value="3">suggestion</option>
@@ -162,7 +170,7 @@
                                     <textarea class="form-control border-white bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="votre commentaire"></textarea>
                                 </div>
                                 <div class="col-lg-12">
-                                    <button type="button" class="btn btn-secondary btn-primary-outline-0 w-100 py-3 px-5">SUBMIT NOW</button>
+                                    <button type="button" class="btn btn-secondary btn-primary-outline-0 w-100 py-3 px-5">COMMENTEZ</button>
                                 </div>
                             </div>
                         </form>
@@ -197,7 +205,9 @@
                         </div>
                         <div class="d-flex justify-content-between fs-5 text-white mb-4">
                             <p>Dimanche:</p>
+
                             <p>Fermé</p>
+
                         </div>
                         <p class="text-dark">Faites un tour pour voire et patagez la joie de nos enfants.</p>
                     </div>
@@ -229,7 +239,9 @@
                     </div>
                     
                     <div class="col-md-4 text-center text-md-end text-white">
+
                         <p> Developper par Ange & Zaria</p>
+
                     </div>
                 </div>
                     {{-- <div class="d-flex justify-content-center">

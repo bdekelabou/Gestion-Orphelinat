@@ -63,33 +63,6 @@
                 @enderror
             </div>
 
-            <!-- Situation Médicale -->
-            <div class="form-group">
-                <label for="situationMedicale">{{ __('Situation Médicale') }}</label>
-                <select id="situationMedicale" class="form-control w-100" name="situationMedicale">
-                    <option value="" {{ $enfant->situationMedicale == '' ? 'selected' : '' }}></option>
-                    <option value="En bonne santé" {{ $enfant->situationMedicale == 'En bonne santé' ? 'selected' : '' }}>En bonne santé</option>
-                    <option value="Souffrant" {{ $enfant->situationMedicale == 'Souffrant' ? 'selected' : '' }}>Souffrant</option>
-                    <option value="Dépressif" {{ $enfant->situationMedicale == 'Dépressif' ? 'selected' : '' }}>Dépressif</option>
-                </select>
-                @error('situationMedicale')
-                <div class="alert alert-danger mt-2">{{ $message }}</div>
-                @enderror
-            </div>
-
-            <!-- Situation Scolaire -->
-            <div class="form-group">
-                <label for="situationScolaire">{{ __('Situation Scolaire') }}</label>
-                <select id="situationScolaire" class="form-control w-100" name="situationScolaire">
-                    <option value="" {{ $enfant->situationScolaire == '' ? 'selected' : '' }}></option>
-                    <option value="Scolarisé" {{ $enfant->situationScolaire == 'Scolarisé' ? 'selected' : '' }}>Scolarisé</option>
-                    <option value="Non scolarisé" {{ $enfant->situationScolaire == 'Non scolarisé' ? 'selected' : '' }}>Non scolarisé</option>
-                </select>
-                @error('situationScolaire')
-                <div class="alert alert-danger mt-2">{{ $message }}</div>
-                @enderror
-            </div>
-
             <div class="form-group mt-4 text-center">
                 <button type="submit" class="btn btn-primary">{{ __('Mettre à jour') }}</button>
                 <a href="{{ route('enfants.index') }}" class="btn btn-secondary">{{ __('Annuler') }}</a>
