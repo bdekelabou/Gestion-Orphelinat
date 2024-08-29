@@ -39,9 +39,14 @@
                         <div class="col-lg-8">
                             <div class="d-flex flex-wrap">
                                 <a href="#" class="me-4"><i class="fas fa-map-marker-alt me-2"></i>Localisation</a>
+<<<<<<< HEAD
                                 <a href="#" class="me-4"><i class="fas fa-phone-alt me-2"></i>+228 91260205</a>
 
                                 <a href="#"><i class="fas fa-envelope me-2"></i>angeines822@gmail.com</a>
+=======
+                                <a href="#" class="me-4"><i class="fas fa-phone-alt me-2"></i>+22893849200</a>
+                                <a href="#"><i class="fas fa-envelope me-2"></i>supernova@gmail.com</a>
+>>>>>>> eb5097acfef62e1006b7e3a4e346c1471f2cba05
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -198,7 +203,6 @@
                         </div>
                         <div class="d-flex justify-content-between fs-5 text-white mb-4">
                             <p>Dimanche:</p>
-
                             <p>Fermé</p>
                         </div>
                         <p class="text-dark">Faites un tour pour voire et patagez la joie de nos enfants.</p>
@@ -231,7 +235,6 @@
                     </div>
                     
                     <div class="col-md-4 text-center text-md-end text-white">
-
                         <p> Developper par Ange & Zaria</p>
                     </div>
                 </div>

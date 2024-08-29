@@ -36,7 +36,6 @@ class DonController extends Controller
         return redirect('/ajouter')->with('status','Le don a bien été ajouté');
     }
 
-
     public function ajouter_don_traitement_visiteurs(Request $request)
     {
         $request->validate([
@@ -80,7 +79,6 @@ class DonController extends Controller
         $don->nature = $request->nature;
         $don->espece = $request->espece;
         $don->update();
-
 
         return redirect('/don')->with('status','Le don a bien été modifié');
     }

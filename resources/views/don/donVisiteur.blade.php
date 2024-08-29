@@ -29,8 +29,8 @@
                 <input type="text" class="form-control form-control-lg mx-auto mb-3" id="prenom" name="prenom" required placeholder="Prénom" style="max-width: 400px;">
             </div>
 
-            <input type="hidden" name="nature" value="pré-rempli"> <!-- Adapté selon tes besoins -->
-            <input type="hidden" name="espece" value="pré-rempli"> <!-- Adapté selon tes besoins -->
+            <input type="hidden" name="nature" value="Argent"> <!-- Adapté selon tes besoins -->
+            <input type="hidden" name="espece" value="Argent"> <!-- Adapté selon tes besoins -->
 
             <h3 class="mt-5 mb-4">Mode de paiement</h3>
             <div class="form-group">
@@ -52,7 +52,7 @@
                     <input type="text" class="form-control form-control-lg mx-auto mb-3" id="tmoneyNumber" name="tmoneyNumber" placeholder="Numéro TMoney" style="max-width: 400px;">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control form-control-lg mx-auto mb-3" id="tmoneyCode" name="tmoneyCode" placeholder="Code secret TMoney" style="max-width: 400px;">
+                    <input type="password" class="form-control form-control-lg mx-auto mb-3" id="tmoneyCode" name="tmoneyCode" placeholder="Code secret TMoney" style="max-width: 400px;">
                 </div>
             </div>
 

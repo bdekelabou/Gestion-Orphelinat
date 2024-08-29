@@ -99,12 +99,10 @@ class EvenementController extends Controller
             'date' => 'required|date',
         ]);
 
-
         $evenement = Evenement::find($request->id);
         $evenement->titre = $request->titre;
         $evenement->description = $request->description;
         $evenement->date = $request->date;
-
         $evenement->update();
 
         return redirect('/evenements/liste')->with('status', 'L\'evenement a bien été modifié');

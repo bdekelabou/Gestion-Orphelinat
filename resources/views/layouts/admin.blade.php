@@ -151,7 +151,6 @@
                   </li>
 
                   <li>
-
                     <a href="{{route('evenements.liste')}}">
                       <span class="sub-item">Liste des evenements</span>
                     </a>
@@ -163,8 +162,12 @@
               <a data-bs-toggle="collapse" href="#tables">
                 <i class="fas fa-table"></i>
                 <p>Bilan-Medical</p>
+<<<<<<< HEAD
 
                 <span class="caret"></span>
+=======
+                <span class="caret"></span>n
+>>>>>>> eb5097acfef62e1006b7e3a4e346c1471f2cba05
               </a>
               <div class="collapse" id="tables">
                 <ul class="nav nav-collapse">
@@ -174,8 +177,12 @@
                     </a>
                   </li>
                   <li>
+<<<<<<< HEAD
 
                     <a href="{{route('medical.host')}}">
+=======
+                    {{-- <a href="{{route('medical.host')}}"> --}}
+>>>>>>> eb5097acfef62e1006b7e3a4e346c1471f2cba05
                       <span class="sub-item">Liste des bilans</span>
                     </a>
                   </li>
@@ -205,7 +212,6 @@
             </li>
             <li class="nav-item">
               <a data-bs-toggle="collapse" href="#maps">
-
               <i class="fas fa-bars"></i>
                 <p>Dons</p>
                 <span class="caret"></span>
@@ -213,7 +219,6 @@
               <div class="collapse" id="maps">
                 <ul class="nav nav-collapse">
                   <li>
-
                     <a  href="{{Route('don.ajout')}}">
                       <span class="sub-item">Ajouter un don</span>
                     </a>

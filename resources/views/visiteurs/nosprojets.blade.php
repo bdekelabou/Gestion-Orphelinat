@@ -37,13 +37,13 @@
                                         @endif
                                     </p>
                                     <h3>{{ $projet->date_debut }}</h3>
-                                    <a href="#" class="btn btn-secondary btn-primary-outline-0 rounded-pill py-2 px-4">FAIRE UN DON</a>
+                                    <a  href="/don/visiteur" class="btn btn-secondary btn-primary-outline-0 rounded-pill py-2 px-4">FAIRE UN DON</a>
 
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                    <img src="{{ asset('storage/' . $projet->image) }}" alt="Image du projet" style="max-width: 200px; max-height:200px margin-top: 10px;">
+                                    <img src="{{asset('storage/' . $projet->image) }}" alt="Image du projet" style="max-width: 200px; max-height:200px ; margin-top: 10px;">
                                 </div>
                             </div>
 
