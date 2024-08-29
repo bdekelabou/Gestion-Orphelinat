@@ -17,7 +17,7 @@
 
                             <h1 class="display-3 text-capitalize mb-3" style="color: #000000;">BIENVENUE A L'ORPHELINAT SUPERNOVA</h1>
                             <div class="d-flex align-items-center justify-content-center">
-                               <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">NOS PROJETS</a>
+                               <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="{{'/nosprojets'}}">NOS PROJETS</a>
                                 <a class="btn custom-btn-donate rounded-pill py-3 px-5"  href="/don/visiteur">FAIRE UN DON</a>
                             </div>
                         </div>
@@ -29,7 +29,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">FAITES PARTIS DE NOTRE MISSION</h1>
                             <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">NOS PROJETS</a>
+                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="{{'/nosprojets'}}">NOS PROJETS</a>
                                 <a class="btn custom-btn-donate rounded-pill py-3 px-5"  href="/don/visiteur"> FAIRE UN DON</a>
                             </div>
                         </div>
@@ -42,7 +42,7 @@
 
                             <h1 class="display-3 text-capitalize mb-2" style="color: #000000;">SOYEZ UN PILIER POUR LES ENFANTS</h1>
                             <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="#">NOS PROJETS</a>
+                                <a class="btn custom-btn-project rounded-pill py-3 px-5 me-4" href="{{'/nosprojets'}}">NOS PROJETS</a>
                                 <a class="btn custom-btn-donate rounded-pill py-3 px-5" href="/don/visiteur"> FAIRE UN DON</a>
                             </div>
                         </div>
@@ -88,21 +88,20 @@
                         </div>
                         <div class="col-4">
                             <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                <img src="{{ asset('storage/' . $projet->image) }}" alt="Image du projet" style="max-width: 200px; max-height:200px margin-top: 10px;">
+                                <img src="{{ asset('storage/' . $projet->image) }}" alt="Image du projet" style="max-width: 200px; max-height:200px ; margin-top: 10px;">
                             </div>
                         </div>
 
 
                     </div> 
-                    <div class="col-12">
-                        <div class="services-btn text-center">
-                            <a href="#" class="btn btn-secondary btn-primary-outline-0 rounded-pill py-3 px-5" id="me">Service More</a>
-                        </div>
-                    </div>
-                </div>
-                   
+                </div>  
             </div>
             @endforeach
+            <div class="col-12">
+                <div class="services-btn text-center">
+                    <a href="{{'/nosprojets'}}" class="btn btn-secondary btn-primary-outline-0 rounded-pill py-3 px-5" id="me">Service More</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -124,9 +123,9 @@
                                 <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
                                     <img src="{{Vite::asset('resources/assets/asset/img/testimonial-1.jpg')}}" class="img-fluid rounded-circle" alt="">
                                 </div>
-                                <div class="text-center">
+                                {{-- <div class="text-center">
                                     <h4 class="mb-2 text-jee">Person Name</h4>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                         <div class="col-8">
@@ -141,7 +140,9 @@
                                     <i class="fas fa-star text-secondary"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <p class="fs-5 mb-0 text-black">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                    <p class="fs-5 mb-0 " style="color: black;">
+                                    L'orphelinat fait un travail incroyable en offrant aux enfants un foyer aimant et une chance de s'épanouir. 
+                                    Leur dévouement change des vies chaque jour.
                                 </p>
                             </div>
                         </div>
@@ -154,9 +155,9 @@
                                 <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
                                     <img src="{{Vite::asset('resources/assets/asset/img/testimonial-2.jpg')}}" class="img-fluid rounded-circle" alt="">
                                 </div>
-                                <div class="text-center">
+                                {{-- <div class="text-center">
                                     <h4 class="mb-2 text-jee">Person Name</h4>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                         <div class="col-8">
@@ -170,9 +171,10 @@
                                     <i class="fas fa-star text-secondary"></i>
                                     <i class="fas fa-star text-secondary"></i>
                                     <i class="fas fa-star"></i>
-                                </div>
-                                <p class="fs-5 mb-0 text-black">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                </p>
+                                </div>  
+                                <p class="fs-5 mb-0 " style="color: black;">
+                                    Les enfants ici sont plein de courage et d'espoir, malgré les épreuves qu'ils ont traversées. 
+                                    C'est inspirant de voir leur résilience et leur joie de vivre.
                             </div>
                         </div>
                     </div>
@@ -184,9 +186,9 @@
                                 <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
                                     <img src="{{Vite::asset('resources/assets/asset/img/testimonial-3.jpg')}}" class="img-fluid rounded-circle" alt="">
                                 </div>
-                                <div class="text-center">
+                                {{-- <div class="text-center">
                                     <h4 class="mb-2 text-jee">Person Name</h4>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                         <div class="col-8">
@@ -201,7 +203,9 @@
                                     <i class="fas fa-star text-secondary"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <p class="fs-5 mb-0 text-black">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                <p class="fs-5 mb-0 " style="color: black; font-size: 30px;" >
+                                    Les programmes de cet orphelinat sont conçus pour véritablement transformer la vie des enfants, 
+                                    en leur offrant éducation, sécurité, et un avenir meilleur.
                                 </p>
                             </div>
                         </div>

@@ -23,4 +23,9 @@ class User extends Authenticatable
     ];
 
 
+    public function enfants()
+    {
+        return $this->hasMany(Enfant::class);
+    }
+
 }

@@ -58,33 +58,6 @@
                     @enderror
                 </div>
 
-                <!-- Situation Médicale -->
-                <div class="form-group">
-                    <label for="situationMedicale">{{ __('Situation Médicale') }}</label>
-                    <select id="situationMedicale" class="form-control" name="situationMedicale">
-                        <option value="" disabled selected>-- Sélectionner --</option>
-                        <option value="En bonne santé" {{ old('situationMedicale') == 'En bonne santé' ? 'selected' : '' }}>En bonne santé</option>
-                        <option value="Souffrant" {{ old('situationMedicale') == 'Souffrant' ? 'selected' : '' }}>Souffrant</option>
-                        <option value="Dépressif" {{ old('situationMedicale') == 'Dépressif' ? 'selected' : '' }}>Dépressif</option>
-                    </select>
-                    @error('situationMedicale')
-                        <div class="alert alert-danger mt-2">{{ $message }}</div>
-                    @enderror
-                </div>
-
-                <!-- Situation Scolaire -->
-                <div class="form-group">
-                    <label for="situationScolaire">{{ __('Situation Scolaire') }}</label>
-                    <select id="situationScolaire" class="form-control" name="situationScolaire">
-                        <option value="" disabled selected>-- Sélectionner --</option>
-                        <option value="Scolarisé" {{ old('situationScolaire') == 'Scolarisé' ? 'selected' : '' }}>Scolarisé</option>
-                        <option value="Non scolarisé" {{ old('situationScolaire') == 'Non scolarisé' ? 'selected' : '' }}>Non scolarisé</option>
-                    </select>
-                    @error('situationScolaire')
-                        <div class="alert alert-danger mt-2">{{ $message }}</div>
-                    @enderror
-                </div>
-
                 <div class="form-group mt-4 text-center">
                     <button type="submit" class="btn btn-primary">
                         {{ __('Ajouter') }}

@@ -21,15 +21,10 @@
                 <!-- Description -->
                 <div class="form-group">
                     <label for="description">{{ __('Description') }}</label>
-<<<<<<< HEAD
-                    <textarea id="description" class="form-control" name="description" rows="4" required>{{ old('description') }}</textarea>
-=======
-<<<<<<< HEAD
+
                     <textarea id="description" class="form-control" name="description" rows="2" required>{{ old('description') }}</textarea>
-=======
-                    <textarea id="description" class="form-control" name="description" rows="4" required>{{ old('description') }}</textarea>
->>>>>>> da8901871b3b1e04e879f7c69fb4882224d9f5df
->>>>>>> ff5450d68b22073c4e665c139df58d76a1d4f903
+
+
                     @error('description')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror
@@ -53,21 +48,6 @@
                     @enderror
                 </div>
 
-                <!-- Statut -->
-                <div class="form-group">
-                    <label for="statut">{{ __('Statut') }}</label><br>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="statut" id="actif" value="1" {{ old('statut') == '1' ? 'checked' : '' }}>
-                        <label class="form-check-label" for="actif">{{ __('Actif') }}</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="statut" id="inactif" value="0" {{ old('statut') == '0' ? 'checked' : '' }}>
-                        <label class="form-check-label" for="inactif">{{ __('Inactif') }}</label>
-                    </div>
-                    @error('statut')
-                        <div class="alert alert-danger mt-2">{{ $message }}</div>
-                    @enderror
-                </div>
 
                 <!-- Image -->
                 <div class="form-group">

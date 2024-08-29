@@ -11,8 +11,6 @@ class Enfant extends Model
     protected $fillable=[
         'user_id',
         'date_naissance',
-        'situationMedicale',
-        'situationScolaire',
     ];
 
     public function user()

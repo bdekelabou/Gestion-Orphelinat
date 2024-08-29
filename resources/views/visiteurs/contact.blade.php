@@ -21,8 +21,8 @@
                 <div class="col-12">
                     <div class="row g-4">
                         <div class="col-lg-4">
-                            <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
-                                <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                            <div class="d-inline-flex bg-light w-100 border border-secondary p-4 rounded">
+                                <i class="fas fa-map-marker-alt fa-2x text-secondary me-4"></i>
                                 <div>
                                     <h4>Adresse</h4>
                                     <p class="mb-0">1010 Lomé, Togo</p>
@@ -30,20 +30,20 @@
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
-                                <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                            <div class="d-inline-flex bg-light w-100 border border-secondary p-4 rounded">
+                                <i class="fas fa-envelope fa-2x text-secondary me-4"></i>
                                 <div>
                                     <h4>Envoyez-nous un mail</h4>
-                                    <p class="mb-0">info@example.com</p>
+                                    <p class="mb-0">angeines822@gmail.com</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
-                                <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                            <div class="d-inline-flex bg-light w-100 border border-secondary p-4 rounded">
+                                <i class="fa fa-phone-alt fa-2x text-secondary me-4"></i>
                                 <div>
                                     <h4>Téléphone</h4>
-                                    <p class="mb-0">(+228) 93849200</p>
+                                    <p class="mb-0">(+228) 91260205</p>
                                 </div>
                             </div>
                         </div>
