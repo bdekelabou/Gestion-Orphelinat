@@ -46,7 +46,7 @@
       <div class="sidebar-logo">
       <!-- Logo Header -->
         <div class="logo-header" data-background-color="dark">
-          <a href="{{route('dashboard')}}" class="logo">
+          <a href="{{route('welcome')}}" class="logo">
             <img
               src="{{Vite::asset('resources/assets/img/kaiadmin/logo_light.png')}}"
               alt="navbar brand"

@@ -82,21 +82,21 @@
                                                         href="{{ url('/dashboard') }}"
                                                         class="rounded-md px-3 py-2 angel"
                                                     >
-                                                        Dashboard
+                                                        Tableau de bord
                                                     </a>
                                                 @else
                                                     <a
                                                         href="{{ route('login') }}"
                                                         class="rounded-md px-3 py-2 angel"
                                                     >
-                                                        Log in
+                                                    se connecter
                                                     </a>
                                                     @if (Route::has('register'))
                                                         <a
                                                             href="{{ route('register') }}"
                                                             class="rounded-md px-3 py-2 angel"
                                                         >
-                                                            Register
+                                                        s'inscrire
                                                         </a>
                                                     @endif
                                                 @endauth

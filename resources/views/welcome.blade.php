@@ -122,9 +122,9 @@
                                 <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
                                     <img src="{{Vite::asset('resources/assets/asset/img/testimonial-1.jpg')}}" class="img-fluid rounded-circle" alt="">
                                 </div>
-                                <div class="text-center">
+                                {{-- <div class="text-center">
                                     <h4 class="mb-2 text-jee">Person Name</h4>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                         <div class="col-8">
@@ -139,7 +139,9 @@
                                     <i class="fas fa-star text-secondary"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <p class="fs-5 mb-0 text-black">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                    <p class="fs-5 mb-0 " style="color: black;">
+                                    L'orphelinat fait un travail incroyable en offrant aux enfants un foyer aimant et une chance de s'épanouir. 
+                                    Leur dévouement change des vies chaque jour.
                                 </p>
                             </div>
                         </div>
@@ -152,9 +154,9 @@
                                 <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
                                     <img src="{{Vite::asset('resources/assets/asset/img/testimonial-2.jpg')}}" class="img-fluid rounded-circle" alt="">
                                 </div>
-                                <div class="text-center">
+                                {{-- <div class="text-center">
                                     <h4 class="mb-2 text-jee">Person Name</h4>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                         <div class="col-8">
@@ -168,9 +170,10 @@
                                     <i class="fas fa-star text-secondary"></i>
                                     <i class="fas fa-star text-secondary"></i>
                                     <i class="fas fa-star"></i>
-                                </div>
-                                <p class="fs-5 mb-0 text-black">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                </p>
+                                </div>  
+                                <p class="fs-5 mb-0 " style="color: black;">
+                                    Les enfants ici sont plein de courage et d'espoir, malgré les épreuves qu'ils ont traversées. 
+                                    C'est inspirant de voir leur résilience et leur joie de vivre.
                             </div>
                         </div>
                     </div>
@@ -182,9 +185,9 @@
                                 <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
                                     <img src="{{Vite::asset('resources/assets/asset/img/testimonial-3.jpg')}}" class="img-fluid rounded-circle" alt="">
                                 </div>
-                                <div class="text-center">
+                                {{-- <div class="text-center">
                                     <h4 class="mb-2 text-jee">Person Name</h4>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                         <div class="col-8">
@@ -199,7 +202,9 @@
                                     <i class="fas fa-star text-secondary"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
-                                <p class="fs-5 mb-0 text-black">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                <p class="fs-5 mb-0 " style="color: black; font-size: 30px;" >
+                                    Les programmes de cet orphelinat sont conçus pour véritablement transformer la vie des enfants, 
+                                    en leur offrant éducation, sécurité, et un avenir meilleur.
                                 </p>
                             </div>
                         </div>

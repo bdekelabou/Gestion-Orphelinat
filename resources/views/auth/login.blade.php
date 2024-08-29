@@ -1,12 +1,12 @@
 @extends('layouts.visiteur')
 @section('content')
-`
+
 
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
-    <for     method="POST" action="{{ route('login') }}">
+    <form    method="POST" action="{{ route('login') }}">
         @csrf
 
         <!-- Email Address -->
