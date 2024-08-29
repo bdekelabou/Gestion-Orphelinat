@@ -4,6 +4,7 @@
     <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
         <div class="w-50">
             <h1 class="text-center mb-4">Ajouter un Evenement</h1>
+
             <form method="POST" action="{{ route('ajouter.evenement_traitement') }} " enctype="multipart/form-data">
                 @csrf
 
@@ -24,6 +25,7 @@
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror
                 </div>
+
 
                 <!-- image -->
                 <div class="form-group">

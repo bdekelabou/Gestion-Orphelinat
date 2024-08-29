@@ -151,6 +151,7 @@
                   </li>
 
                   <li>
+
                     <a href="{{route('evenements.liste')}}">
                       <span class="sub-item">Liste des evenements</span>
                     </a>
@@ -162,12 +163,9 @@
               <a data-bs-toggle="collapse" href="#tables">
                 <i class="fas fa-table"></i>
                 <p>Bilan-Medical</p>
-<<<<<<< HEAD
 
                 <span class="caret"></span>
-=======
-                <span class="caret"></span>n
->>>>>>> eb5097acfef62e1006b7e3a4e346c1471f2cba05
+
               </a>
               <div class="collapse" id="tables">
                 <ul class="nav nav-collapse">
@@ -177,12 +175,7 @@
                     </a>
                   </li>
                   <li>
-<<<<<<< HEAD
-
                     <a href="{{route('medical.host')}}">
-=======
-                    {{-- <a href="{{route('medical.host')}}"> --}}
->>>>>>> eb5097acfef62e1006b7e3a4e346c1471f2cba05
                       <span class="sub-item">Liste des bilans</span>
                     </a>
                   </li>
@@ -200,6 +193,7 @@
                   <li>
                     <a href="{{ route('scolaire.create') }}">
                       <span class="sub-item">Faire un educatif</span>
+
                     </a>
                   </li>
                   <li>

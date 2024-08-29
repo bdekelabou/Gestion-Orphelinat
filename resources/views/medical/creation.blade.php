@@ -9,12 +9,15 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-body">
+
                     <h4 class="card-title text-center mb-4">{{ 'Faire un bilan' }}</h4>
+
                     <form method="POST" action="{{ route('medical.store') }}">
                         @csrf
                         {{-- @if(isset($medical))
                             @method('PUT')
                         @endif --}}
+
 
                         <!-- Sélectionner un Enfant -->
                         <div class="form-group">
@@ -127,6 +130,7 @@
 
                         <div class="form-group mt-4 text-center">
                             <button type="submit" class="btn btn-primary">{{ 'Ajouter' }}</button>
+
                             <a href="{{ route('medical.host') }}" class="btn btn-secondary">Annuler</a>
                         </div>
                     </form>
@@ -139,40 +143,12 @@
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/i18n/fr.js"></script>
 <script>
     $(document).ready(function() {
-<<<<<<< HEAD
+
     $('.selectpicker').selectpicker({
         liveSearchPlaceholder: 'Recherchez...',
         noneSelectedText: 'Aucune sélection',
         noneResultsText: 'Aucune correspondance pour {0}'
-=======
-        // Initialisez Select2 pour le select simple
-        $('#situationMedicale').select2();
 
-        // Initialisez Select2 pour le select multiple
-        $('#situationScolaire').select2();
-
-        // Initialisez Typeahead pour le champ de type basic_typeahead
-        var states = ['Alabama', 'Wyoming', 'America', 'Canada', 'Russia'];
-        $('#nom').typeahead({
-            source: states
-        });
-
-        // Initialisez Typeahead pour le champ de type bloodhound_typeahead
-        var bloodhound = new Bloodhound({
-            datumTokenizer: Bloodhound.tokenizers.whitespace,
-            queryTokenizer: Bloodhound.tokenizers.whitespace,
-            local: states
-        });
-
-        $('#prenom').typeahead({
-            hint: true,
-            highlight: true,
-            minLength: 1
-        }, {
-            name: 'states',
-            source: bloodhound
-        });
->>>>>>> eb5097acfef62e1006b7e3a4e346c1471f2cba05
     });
 });
 </script>

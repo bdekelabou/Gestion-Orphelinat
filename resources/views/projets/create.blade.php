@@ -21,7 +21,10 @@
                 <!-- Description -->
                 <div class="form-group">
                     <label for="description">{{ __('Description') }}</label>
+
                     <textarea id="description" class="form-control" name="description" rows="2" required>{{ old('description') }}</textarea>
+
+
                     @error('description')
                         <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror
@@ -45,26 +48,7 @@
                     @enderror
                 </div>
 
-<<<<<<< HEAD
-                
-=======
-                {{-- <!-- Statut -->
-                <div class="form-group">
-                    <label for="statut">{{ __('Statut') }}</label><br>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="statut" id="actif" value="1" {{ old('statut') == '1' ? 'checked' : '' }}>
-                        <label class="form-check-label" for="actif">{{ __('Actif') }}</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="statut" id="inactif" value="0" {{ old('statut') == '0' ? 'checked' : '' }}>
-                        <label class="form-check-label" for="inactif">{{ __('Inactif') }}</label>
-                    </div>
-                    @error('statut')
-                        <div class="alert alert-danger mt-2">{{ $message }}</div>
-                    @enderror
-                </div> --}}
 
->>>>>>> eb5097acfef62e1006b7e3a4e346c1471f2cba05
                 <!-- Image -->
                 <div class="form-group">
                     <label for="image">{{ __('Image') }}</label>

@@ -8,7 +8,9 @@ use App\Http\Controllers\ProjetController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\VisitorController;
+
 use App\Http\Controllers\ScolaireController;
+
 
 
 
@@ -27,7 +29,9 @@ Route::get('/apropos', function () {
 });
 
 
+
 route::get('/nosprojets', [ProjetController::class, 'nosprojets'])->name('nosprojets');
+
 
 
 Route::get('/Equipe',function() {
@@ -111,6 +115,7 @@ Route::resource('medical', MedicalController::class)->names([
 // Route::get('/enfants/{id}/medical', [EnfantController::class, 'showMedical'])->name('enfants.show');
 
 //Route pour projet 
+
 Route::resource('projets', ProjetController::class)->names([
     'index' => 'projets.index',
     'create' => 'projets.create',

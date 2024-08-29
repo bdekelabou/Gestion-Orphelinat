@@ -17,7 +17,9 @@ return new class extends Migration
             $table->string('description'); 
             $table->integer('Budget');
             $table->date('date_debut');
+
             $table->boolean('statut')->default(false);
+
             $table->timestamps();
         });
     }
