@@ -13,5 +13,6 @@ class Don extends Model
         'nom',
         'prenom',
         'nature',
+        'espece'
     ];
 }

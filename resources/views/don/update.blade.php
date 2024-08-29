@@ -51,7 +51,7 @@
 
                     <br> <br />
 
-                    <a href="/don" class="btn btn-danger"> Revenir à la liste des dons</a>
+                    <a href="/don/projet" class="btn btn-danger"> Revenir à la liste des dons</a>
                 </form>
             </div>
         </div>

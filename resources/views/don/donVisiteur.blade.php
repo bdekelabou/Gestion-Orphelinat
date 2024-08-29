@@ -4,6 +4,7 @@
 <div class="d-flex justify-content-center">
     <div class="col-md-8">
         <h2 class="text-center mb-4">Combien souhaitez-vous donner ?</h2>
+        <h2 class="text-center mb-4">Faire un don pour le projet : {{ $projet->nom }}</h2>
         <form method="POST" action="{{ route('ajouter_don.traitement.visiteur') }}" class="text-center bg-light p-5 rounded shadow-sm">
             @csrf
 
@@ -31,6 +32,7 @@
 
             <input type="hidden" name="nature" value="Argent"> <!-- Adapté selon tes besoins -->
             <input type="hidden" name="espece" value="Argent"> <!-- Adapté selon tes besoins -->
+            <input type="hidden" name="projet" value="{{ $projet->nom }}">
 
             <h3 class="mt-5 mb-4">Mode de paiement</h3>
             <div class="form-group">

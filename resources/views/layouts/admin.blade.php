@@ -222,6 +222,11 @@
                       <span class="sub-item">Liste des dons</span>
                     </a>
                   </li>
+                  <li>
+                    <a href="{{Route('liste.don.projet')}}">
+                      <span class="sub-item">Liste des dons projets</span>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
