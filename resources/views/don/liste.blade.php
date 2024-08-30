@@ -9,7 +9,7 @@
     <div class="col s12 ">
     <h1>FAIRE UN DON</h1>
     <hr>
-        <a href="{{Route('don.ajout')}}" class="btn btn-primary">Ajouter un don</a>
+        <a href="{{Route('liste.don.projet')}}" class="btn btn-primary">Ajouter un don</a>
         <hr>
         @if (session('status'))
                 <div class="alert alert-success">

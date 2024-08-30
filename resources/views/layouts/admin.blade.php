@@ -217,11 +217,11 @@
                       <span class="sub-item">Ajouter un don</span>
                     </a>
                   </li>
-                  <li>
+                  {{-- <li>
                     <a href="{{Route('don.liste')}}">
                       <span class="sub-item">Liste des dons</span>
                     </a>
-                  </li>
+                  </li> --}}
                   <li>
                     <a href="{{Route('liste.don.projet')}}">
                       <span class="sub-item">Liste des dons projets</span>

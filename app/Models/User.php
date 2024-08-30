@@ -20,6 +20,7 @@ class User extends Authenticatable
         'nom',
         'prenom',
         'genre',
+        // 'type_user',
     ];
 
 

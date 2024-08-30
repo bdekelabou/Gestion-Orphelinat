@@ -42,12 +42,6 @@
                             {{ __('Femme') }}
                         </label>
                     </div>
-                    <div class="form-check mr-3">
-                        <input class="form-check-input" type="radio" name="genre" id="genre_autre" value="autre" {{ $enfant->user->genre == 'autre' ? 'checked' : '' }}>
-                        <label class="form-check-label" for="genre_autre">
-                            {{ __('Autre') }}
-                        </label>
-                    </div>
                 </div>
                 @error('genre')
                 <div class="alert alert-danger mt-2">{{ $message }}</div>

@@ -26,7 +26,7 @@
               <div class="col col-stats ms-3 ms-sm-0">
                 <div class="numbers">
                   <p class="card-category">Visiteurs</p>
-                  <h4 class="card-title">150</h4>
+                  <h4 class="card-title">{{ $totalVisitors }}</h4>
                 </div>
               </div>
             </div>
@@ -68,7 +68,7 @@
               <div class="col col-stats ms-3 ms-sm-0">
                 <div class="numbers">
                   <p class="card-category">Total des dons</p>
-                  <h4 class="card-title">{{$totalDons}}</h4>
+                  <h4 class="card-title">{{$totalDons}}FCFA</h4>
                 </div>
               </div>
             </div>
@@ -137,7 +137,7 @@
                                 {{ $projet->nom }}
                             </th>
                             <td class="text-end">{{ \Carbon\Carbon::parse($projet->date_debut)->locale('fr')->isoFormat('dddd D MMMM YYYY, HH:mm') }}</td>
-                            <td class="text-end">{{ number_format($projet->budget, 0, ',', ' ') }} FCFA</td>
+                            <td class="text-end">{{ number_format($projet->Budget, 0, ',', ' ') }} FCFA</td>
                             <td class="text-end">
                                 @if($projet->publier)
                                     <span class="badge badge-success">EN COURS</span>

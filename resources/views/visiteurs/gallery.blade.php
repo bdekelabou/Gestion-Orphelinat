@@ -18,7 +18,7 @@
         <div class="container py-5">
             <div class="text-center mx-auto mb-5" style="max-width: 800px;">
                 <p class="fs-4 text-uppercase text-secondary">Notre Galleries</p>
-                <h1 class="display-4 mb-4">Voire notre galerie</h1>
+                <h1 class="display-4 mb-4">Voir notre galerie</h1>
             </div>
             <div class="tab-class text-center">
                 <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
@@ -68,7 +68,7 @@
                                         <div class="gallery-img">
                                             <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-2.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Nos activites</h4>
+                                                <h4 class="text-secondary">Nos projets</h4>
                                             </div>
                                             <div class="search-icon">
                                                 <a href="{{Vite::asset('resources/assets/asset/img/gallery-2.jpg')}}" data-lightbox="Gallery-2" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
@@ -121,23 +121,23 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-7.jpg')}}" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-5.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
                                                 <h4 class="text-secondary">Nos projets</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-7.jpg')}}" data-lightbox="Gallery-7" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-5.jpg')}}" data-lightbox="Gallery-7" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-8.jpg')}}" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-7.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
                                                 <h4 class="text-secondary">Nos projets</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-8.jpg')}}" data-lightbox="Gallery-8" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-7.jpg')}}" data-lightbox="Gallery-8" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -151,45 +151,45 @@
                                 <div class="row g-4">
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-9.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-1.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Skin Care</h4>
+                                                <h4 class="text-secondary">Nos evenements</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-9.jpg" data-lightbox="Gallery-9" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-1.jpg')}}" data-lightbox="Gallery-9" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-10.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-2.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Skin Care</h4>
+                                                <h4 class="text-secondary">Nos evenements</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-10.jpg" data-lightbox="Gallery-10" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-2.jpg')}}" data-lightbox="Gallery-10" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-5.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-4.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Skin Care</h4>
+                                                <h4 class="text-secondary">Nos evenements</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-5.jpg" data-lightbox="Gallery-11" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-4.jpg')}}" data-lightbox="Gallery-11" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-1.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-5.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Skin Care</h4>
+                                                <h4 class="text-secondary">Nos evenements</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-1.jpg" data-lightbox="Gallery-12" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-5.jpg')}}" data-lightbox="Gallery-12" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -203,45 +203,45 @@
                                 <div class="row g-4">
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-11.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-3.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Stream Bath</h4>
+                                                <h4 class="text-secondary">Nos evenements</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-11.jpg" data-lightbox="Gallery-13" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-3.jpg')}}" data-lightbox="Gallery-13" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-12.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-6.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Stream Bath</h4>
+                                                <h4 class="text-secondary">Nos evenements</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-12.jpg" data-lightbox="Gallery-14" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-6.jpg')}}" data-lightbox="Gallery-14" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-2.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-1.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Stream Bath</h4>
+                                                <h4 class="text-secondary">Nos evenements</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-2.jpg" data-lightbox="Gallery-15" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-1.jpg')}}" data-lightbox="Gallery-15" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-6.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-7.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Stream Bath</h4>
+                                                <h4 class="text-secondary">Nos evenements</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-6.jpg" data-lightbox="Gallery-16" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-7.jpg')}}" data-lightbox="Gallery-16" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -255,45 +255,45 @@
                                 <div class="row g-4">
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-13.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-2.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Stone Therapy</h4>
+                                                <h4 class="text-secondary">L'administration</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-13.jpg" data-lightbox="Gallery-17" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-2.jpg')}}" data-lightbox="Gallery-17" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-2.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-4.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Stone Therapy</h4>
+                                                <h4 class="text-secondary">L'administration</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-2.jpg" data-lightbox="Gallery-18" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-4.jpg')}}" data-lightbox="Gallery-18" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-3.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-7.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Stone Therapy</h4>
+                                                <h4 class="text-secondary">L'administration</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-3.jpg" data-lightbox="Gallery-19" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-7.jpg')}}" data-lightbox="Gallery-19" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-7.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-3.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Stone Therapy</h4>
+                                                <h4 class="text-secondary">L'administration</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-7.jpg" data-lightbox="Gallery-20" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-3.jpg')}}" data-lightbox="Gallery-20" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -307,67 +307,67 @@
                                 <div class="row g-4">
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-4.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-4.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Face Massage</h4>
+                                                <h4 class="text-secondary">Nos activites</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-4.jpg" data-lightbox="Gallery-21" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-4.jpg')}}" data-lightbox="Gallery-21" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-6.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-6.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Face Massage</h4>
+                                                <h4 class="text-secondary">Nos activites</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-6.jpg" data-lightbox="Gallery-22" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-6.jpg')}}" data-lightbox="Gallery-22" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-8.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-5.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Face Massage</h4>
+                                                <h4 class="text-secondary">Nos activites</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-8.jpg" data-lightbox="Gallery-23" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-5.jpg')}}" data-lightbox="Gallery-23" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-14.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-7.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Face Massage</h4>
+                                                <h4 class="text-secondary">Nos activites</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-14.jpg" data-lightbox="Gallery-24" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-7.jpg')}}" data-lightbox="Gallery-24" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-4.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-4.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Face Massage</h4>
+                                                <h4 class="text-secondary">Nos activites</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-4.jpg" data-lightbox="Gallery-25" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-4.jpg')}}" data-lightbox="Gallery-25" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/gallery-8.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="{{Vite::asset('resources/assets/asset/img/gallery-1.jpg')}}" alt="">
                                             <div class="gallery-overlay p-4">
-                                                <h4 class="text-secondary">Face Massage</h4>
+                                                <h4 class="text-secondary">Nos activites</h4>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/gallery-8.jpg" data-lightbox="Gallery-26" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                <a href="{{Vite::asset('resources/assets/asset/img/gallery-1.jpg')}}" data-lightbox="Gallery-26" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
                                             </div>
                                         </div>
                                     </div>

@@ -90,7 +90,7 @@ class EnfantController extends Controller
         $request->validate([
             'nom'=> 'required|string',
             'prenom' => 'required|string',
-            'genre' => ['required', 'in:homme,femme,autre'],
+            'genre' => ['required', 'in:homme,femme'],
             'date_naissance' => 'required|date',
             'situationMedicale' => 'required|string|in:En bonne santé,Souffrant,Dépressif',
             'situationScolaire' => 'required|string|in:Scolarisé,Non scolarisé',

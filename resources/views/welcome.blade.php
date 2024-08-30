@@ -83,7 +83,7 @@
                                     @endif
                                 </p>
                                 <h3>{{ $projet->date_debut }}</h3>
-                                <a href="#" class="btn btn-secondary btn-primary-outline-0 rounded-pill py-2 px-4">FAIRE UN DON</a>
+                                <a href="{{ route('don.visiteur', ['projet_id' => $projet->id]) }}" class="btn btn-secondary btn-primary-outline-0 rounded-pill py-2 px-4">FAIRE UN DON</a>
                             </div>
                         </div>
                         <div class="col-4">
